@@ -1,0 +1,8 @@
+C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\bin\Debug\PetPamonha.exe
+C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\bin\Debug\PetPamonha.pdb
+C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Agendamento.resources
+C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Cadastro.resources
+C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Properties.Resources.resources
+C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.csproj.GenerateResource.Cache
+C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.exe
+C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.pdb
