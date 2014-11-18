@@ -95,6 +95,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Checkin";
             this.Text = "Checkin";
+            this.Load += new System.EventHandler(this.Checkin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

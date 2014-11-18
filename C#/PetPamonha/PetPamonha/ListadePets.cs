@@ -9,24 +9,24 @@ using System.Windows.Forms;
 
 namespace PetPamonha
 {
-    public partial class Checkin : Form
+    public partial class ListadePets : Form
     {
-        public Checkin()
+        public ListadePets()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void ListadePets_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Checkin_Load(object sender, EventArgs e)
+        private void listAnimaisTratamento_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
