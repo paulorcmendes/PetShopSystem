@@ -40,7 +40,7 @@
             this.txtRGAterminados = new System.Windows.Forms.TextBox();
             this.btnTratado = new System.Windows.Forms.Button();
             this.lblAnimaisTratados = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listAnimaisTratados = new System.Windows.Forms.ListView();
             this.colRGAtratados = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colNomeTratados = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colDonoTratados = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -70,7 +70,7 @@
             listViewGroup1});
             this.listAnimaisTratamento.Location = new System.Drawing.Point(2, 29);
             this.listAnimaisTratamento.Name = "listAnimaisTratamento";
-            this.listAnimaisTratamento.Size = new System.Drawing.Size(362, 302);
+            this.listAnimaisTratamento.Size = new System.Drawing.Size(393, 302);
             this.listAnimaisTratamento.TabIndex = 1;
             this.listAnimaisTratamento.UseCompatibleStateImageBehavior = false;
             this.listAnimaisTratamento.View = System.Windows.Forms.View.Details;
@@ -83,6 +83,7 @@
             // colNomePet
             // 
             this.colNomePet.Text = "Nome";
+            this.colNomePet.Width = 84;
             // 
             // colTratamento
             // 
@@ -92,13 +93,13 @@
             // colDono
             // 
             this.colDono.Text = "Dono do Pet";
-            this.colDono.Width = 126;
+            this.colDono.Width = 131;
             // 
             // lblPetsTratados
             // 
             this.lblPetsTratados.AutoSize = true;
             this.lblPetsTratados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPetsTratados.Location = new System.Drawing.Point(391, 43);
+            this.lblPetsTratados.Location = new System.Drawing.Point(401, 43);
             this.lblPetsTratados.Name = "lblPetsTratados";
             this.lblPetsTratados.Size = new System.Drawing.Size(118, 17);
             this.lblPetsTratados.TabIndex = 2;
@@ -106,7 +107,7 @@
             // 
             // txtRGAterminados
             // 
-            this.txtRGAterminados.Location = new System.Drawing.Point(394, 63);
+            this.txtRGAterminados.Location = new System.Drawing.Point(404, 63);
             this.txtRGAterminados.Name = "txtRGAterminados";
             this.txtRGAterminados.Size = new System.Drawing.Size(115, 20);
             this.txtRGAterminados.TabIndex = 3;
@@ -114,7 +115,7 @@
             // 
             // btnTratado
             // 
-            this.btnTratado.Location = new System.Drawing.Point(408, 100);
+            this.btnTratado.Location = new System.Drawing.Point(417, 98);
             this.btnTratado.Name = "btnTratado";
             this.btnTratado.Size = new System.Drawing.Size(88, 52);
             this.btnTratado.TabIndex = 4;
@@ -126,29 +127,29 @@
             // 
             this.lblAnimaisTratados.AutoSize = true;
             this.lblAnimaisTratados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnimaisTratados.Location = new System.Drawing.Point(598, 9);
+            this.lblAnimaisTratados.Location = new System.Drawing.Point(610, 9);
             this.lblAnimaisTratados.Name = "lblAnimaisTratados";
             this.lblAnimaisTratados.Size = new System.Drawing.Size(172, 17);
             this.lblAnimaisTratados.TabIndex = 5;
             this.lblAnimaisTratados.Text = "Lista de Animais Tratados";
             // 
-            // listView1
+            // listAnimaisTratados
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listAnimaisTratados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colRGAtratados,
             this.colNomeTratados,
             this.colDonoTratados});
-            this.listView1.GridLines = true;
+            this.listAnimaisTratados.GridLines = true;
             listViewGroup2.Header = "ListViewGroup";
             listViewGroup2.Name = "listViewGroup1";
-            this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            this.listAnimaisTratados.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup2});
-            this.listView1.Location = new System.Drawing.Point(515, 29);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(323, 302);
-            this.listView1.TabIndex = 6;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listAnimaisTratados.Location = new System.Drawing.Point(525, 29);
+            this.listAnimaisTratados.Name = "listAnimaisTratados";
+            this.listAnimaisTratados.Size = new System.Drawing.Size(323, 302);
+            this.listAnimaisTratados.TabIndex = 6;
+            this.listAnimaisTratados.UseCompatibleStateImageBehavior = false;
+            this.listAnimaisTratados.View = System.Windows.Forms.View.Details;
             // 
             // colRGAtratados
             // 
@@ -169,8 +170,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(838, 343);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(870, 343);
+            this.Controls.Add(this.listAnimaisTratados);
             this.Controls.Add(this.lblAnimaisTratados);
             this.Controls.Add(this.btnTratado);
             this.Controls.Add(this.txtRGAterminados);
@@ -197,7 +198,7 @@
         private System.Windows.Forms.TextBox txtRGAterminados;
         private System.Windows.Forms.Button btnTratado;
         private System.Windows.Forms.Label lblAnimaisTratados;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listAnimaisTratados;
         private System.Windows.Forms.ColumnHeader colRGAtratados;
         private System.Windows.Forms.ColumnHeader colNomeTratados;
         private System.Windows.Forms.ColumnHeader colDonoTratados;
