@@ -29,34 +29,50 @@
         private void InitializeComponent()
         {
             this.menuTelaPrincipal = new System.Windows.Forms.MenuStrip();
-            this.checkinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agendamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.petToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaDePetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuTelaPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuTelaPrincipal
             // 
             this.menuTelaPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.checkinToolStripMenuItem,
-            this.agendamentoToolStripMenuItem});
+            this.cadastroToolStripMenuItem,
+            this.listaDePetsToolStripMenuItem});
             this.menuTelaPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuTelaPrincipal.Name = "menuTelaPrincipal";
             this.menuTelaPrincipal.Size = new System.Drawing.Size(758, 24);
             this.menuTelaPrincipal.TabIndex = 0;
             this.menuTelaPrincipal.Text = "menuTelaPrincipal";
             // 
-            // checkinToolStripMenuItem
+            // cadastroToolStripMenuItem
             // 
-            this.checkinToolStripMenuItem.Name = "checkinToolStripMenuItem";
-            this.checkinToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
-            this.checkinToolStripMenuItem.Text = "Cadastro de Cliente";
-            this.checkinToolStripMenuItem.Click += new System.EventHandler(this.checkinToolStripMenuItem_Click);
+            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clienteToolStripMenuItem,
+            this.petToolStripMenuItem});
+            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.cadastroToolStripMenuItem.Text = "Cadastro";
             // 
-            // agendamentoToolStripMenuItem
+            // clienteToolStripMenuItem
             // 
-            this.agendamentoToolStripMenuItem.Name = "agendamentoToolStripMenuItem";
-            this.agendamentoToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
-            this.agendamentoToolStripMenuItem.Text = "Cadastro de Animais";
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clienteToolStripMenuItem.Text = "Cliente";
+            // 
+            // petToolStripMenuItem
+            // 
+            this.petToolStripMenuItem.Name = "petToolStripMenuItem";
+            this.petToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.petToolStripMenuItem.Text = "Pet";
+            // 
+            // listaDePetsToolStripMenuItem
+            // 
+            this.listaDePetsToolStripMenuItem.Name = "listaDePetsToolStripMenuItem";
+            this.listaDePetsToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.listaDePetsToolStripMenuItem.Text = "Lista de Pets";
             // 
             // telaPrincipal
             // 
@@ -66,6 +82,8 @@
             this.ClientSize = new System.Drawing.Size(758, 294);
             this.Controls.Add(this.menuTelaPrincipal);
             this.MainMenuStrip = this.menuTelaPrincipal;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "telaPrincipal";
             this.Text = "telaPrincipal";
             this.menuTelaPrincipal.ResumeLayout(false);
@@ -78,7 +96,9 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuTelaPrincipal;
-        private System.Windows.Forms.ToolStripMenuItem checkinToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agendamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem petToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listaDePetsToolStripMenuItem;
     }
 }
