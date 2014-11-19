@@ -6,3 +6,15 @@ C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\ob
 C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.csproj.GenerateResource.Cache
 C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.exe
 C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.pdb
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\bin\Debug\PetPamonha.exe
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\bin\Debug\PetPamonha.pdb
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Agendamento.resources
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.CadastroPet.resources
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Checkin.resources
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.CadastroCliente.resources
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.ListadePets.resources
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Properties.Resources.resources
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.telaPrincipal.resources
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.csproj.GenerateResource.Cache
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.exe
+C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.pdb
