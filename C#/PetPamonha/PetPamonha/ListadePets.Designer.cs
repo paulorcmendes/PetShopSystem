@@ -63,6 +63,7 @@
             this.colNomePet,
             this.colTratamento,
             this.colDono});
+            this.listAnimaisTratamento.GridLines = true;
             listViewGroup1.Header = "ListViewGroup";
             listViewGroup1.Name = "listViewGroup1";
             this.listAnimaisTratamento.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
@@ -137,6 +138,7 @@
             this.colRGAtratados,
             this.colNomeTratados,
             this.colDonoTratados});
+            this.listView1.GridLines = true;
             listViewGroup2.Header = "ListViewGroup";
             listViewGroup2.Name = "listViewGroup1";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {

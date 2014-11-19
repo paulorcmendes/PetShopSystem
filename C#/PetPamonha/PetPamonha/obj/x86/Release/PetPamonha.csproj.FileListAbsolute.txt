@@ -8,3 +8,5 @@ C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\ob
 C:\Users\Paulo Renato\Desktop\LDSOO\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.pdb
 C:\Users\luis\Desktop\pamonhaDeveloper\PetShop\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.exe
 C:\Users\luis\Desktop\pamonhaDeveloper\PetShop\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.pdb
+C:\Reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.exe
+C:\Reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.pdb
