@@ -178,6 +178,8 @@
             this.Controls.Add(this.lblPetsTratados);
             this.Controls.Add(this.listAnimaisTratamento);
             this.Controls.Add(this.lblPetsTratamento);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ListadePets";
             this.Text = "Lista de Pets na Loja";
             this.Load += new System.EventHandler(this.ListadePets_Load);

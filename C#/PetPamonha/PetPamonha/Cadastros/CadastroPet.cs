@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace PetPamonha
 {
-    public partial class Cadastro : Form
+    public partial class CadastroPet : Form
     {
-        public Cadastro()
+        public CadastroPet()
         {
             InitializeComponent();
         }
