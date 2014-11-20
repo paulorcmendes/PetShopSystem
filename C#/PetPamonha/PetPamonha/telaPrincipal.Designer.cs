@@ -35,6 +35,7 @@
             this.listaDePetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCheckin = new System.Windows.Forms.Button();
             this.btnAgendamento = new System.Windows.Forms.Button();
+            this.tratamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuTelaPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,8 @@
             // 
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clienteToolStripMenuItem,
-            this.petToolStripMenuItem});
+            this.petToolStripMenuItem,
+            this.tratamentoToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
@@ -61,13 +63,13 @@
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             // 
             // petToolStripMenuItem
             // 
             this.petToolStripMenuItem.Name = "petToolStripMenuItem";
-            this.petToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.petToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.petToolStripMenuItem.Text = "Pet";
             // 
             // listaDePetsToolStripMenuItem
@@ -93,6 +95,12 @@
             this.btnAgendamento.TabIndex = 2;
             this.btnAgendamento.Text = "Agendamento";
             this.btnAgendamento.UseVisualStyleBackColor = true;
+            // 
+            // tratamentoToolStripMenuItem
+            // 
+            this.tratamentoToolStripMenuItem.Name = "tratamentoToolStripMenuItem";
+            this.tratamentoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tratamentoToolStripMenuItem.Text = "Tratamento";
             // 
             // telaPrincipal
             // 
@@ -124,5 +132,6 @@
         private System.Windows.Forms.ToolStripMenuItem listaDePetsToolStripMenuItem;
         private System.Windows.Forms.Button btnCheckin;
         private System.Windows.Forms.Button btnAgendamento;
+        private System.Windows.Forms.ToolStripMenuItem tratamentoToolStripMenuItem;
     }
 }

@@ -58,6 +58,12 @@
     <Compile Include="Cadastros\CadastroPet.Designer.cs">
       <DependentUpon>CadastroPet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cadastros\CadastroTratamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\CadastroTratamento.Designer.cs">
+      <DependentUpon>CadastroTratamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Checkin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\CadastroPet.resx">
       <DependentUpon>CadastroPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\CadastroTratamento.resx">
+      <DependentUpon>CadastroTratamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Checkin.resx">
       <DependentUpon>Checkin.cs</DependentUpon>
