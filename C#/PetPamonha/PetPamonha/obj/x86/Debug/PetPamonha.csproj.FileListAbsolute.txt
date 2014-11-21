@@ -18,3 +18,5 @@ C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.te
 C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.csproj.GenerateResource.Cache
 C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.exe
 C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.pdb
+C:\Reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.csprojResolveAssemblyReference.cache
+C:\Reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Cadastros.CadastroTratamento.resources
