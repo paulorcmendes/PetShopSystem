@@ -14,3 +14,9 @@ insert into tratamento(nome, valor, duracaoMedia) values('banho', 8.0, '00:25:00
 select * from pettratamento;
 insert into pettratamento(idPet, idTratamento, dataHora) values(1, 1, '2014-11-27 12:00:00');
 insert into pettratamento(idPet, idTratamento, dataHora, estado) values(2, 2, '2014-11-27 12:00:00', true);
+
+select cliente.nome as 'Nome do Cliente', pet.nome as 'Nome do Pet'
+from cliente, pet
+where cliente.idCliente=pet.idCliente
+order by cliente.Nome;
+
