@@ -76,6 +76,7 @@
     <Compile Include="Cadastros\CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DAOCliente.cs" />
     <Compile Include="ListadePets.cs">
       <SubType>Form</SubType>
     </Compile>

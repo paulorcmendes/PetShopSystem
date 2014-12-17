@@ -34,18 +34,6 @@ namespace PetPamonha
         private void btnAgendar_Click(object sender, EventArgs e)
         {
 
-            String nome;
-            String raça;
-            String rga;
-            DateTime data;
-
-            rga = lblRaca.Text;
-
-
-
-
-
-
 
 
         }
