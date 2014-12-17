@@ -15,5 +15,24 @@ namespace PetPamonha.Cadastros
         {
             InitializeComponent();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
+            String nome;
+            String preco;
+            String duracaoMedia;
+
+            nome = txtNome.Text;
+            preco = mktPreco.Text;
+            duracaoMedia = mktDuracaoMedia.Text;
+
+
+            DAOTratamento tratamento = new DAOTratamento();
+
+            tratamento.insereTratamento(nome, preco, duracaoMedia);
+
+
+        }
     }
 }
