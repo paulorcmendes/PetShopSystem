@@ -30,5 +30,10 @@ namespace PetPamonha
         {
 
         }
+
+        private void btnRetirar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -30,6 +30,9 @@ namespace PetPamonha
             email = txtEmail.Text;
             telefone = mktTelefone.Text;
 
+
+
+
             DAOCliente cliente = new DAOCliente();
 
             cliente.insereCliente(nome, cpf, email, telefone);

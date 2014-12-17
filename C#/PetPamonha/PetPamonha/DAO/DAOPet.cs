@@ -10,10 +10,9 @@ namespace PetPamonha
 
 
 
-
-        internal void inserePet(string nome, string dataDeNascimento, string raca, string rga)
-
+        internal void inserePet(string nome, string dataDeNascimento, string raca, string rga, string dono)
         {
+
             throw new NotImplementedException();
 
 

@@ -47,6 +47,7 @@
             this.btnRetirar.TabIndex = 10;
             this.btnRetirar.Text = "Retirar";
             this.btnRetirar.UseVisualStyleBackColor = false;
+            this.btnRetirar.Click += new System.EventHandler(this.btnRetirar_Click);
             // 
             // lblRga
             // 

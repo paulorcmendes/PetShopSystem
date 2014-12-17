@@ -35,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtRaca = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbDono = new System.Windows.Forms.ComboBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.mktRGA = new System.Windows.Forms.MaskedTextBox();
@@ -99,14 +99,15 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Dono:";
             // 
-            // comboBox1
+            // cmbDono
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(60, 132);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 21);
-            this.comboBox1.TabIndex = 7;
+            this.cmbDono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDono.FormattingEnabled = true;
+            this.cmbDono.Location = new System.Drawing.Point(60, 132);
+            this.cmbDono.Name = "cmbDono";
+            this.cmbDono.Size = new System.Drawing.Size(212, 21);
+            this.cmbDono.TabIndex = 7;
+            this.cmbDono.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnEnviar
             // 
@@ -145,7 +146,7 @@
             this.Controls.Add(this.mktRGA);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbDono);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtRaca);
             this.Controls.Add(this.label3);
@@ -157,6 +158,7 @@
             this.MinimizeBox = false;
             this.Name = "CadastroPet";
             this.Text = "Cadastro de Pet";
+            this.Load += new System.EventHandler(this.CadastroPet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,7 +173,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtRaca;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbDono;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox mktRGA;
