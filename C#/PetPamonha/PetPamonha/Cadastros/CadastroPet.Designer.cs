@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mkdDatadeNascimento = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtRaca = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -66,13 +66,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Data de Nascimento:";
             // 
-            // maskedTextBox1
+            // mkdDatadeNascimento
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(125, 40);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(80, 20);
-            this.maskedTextBox1.TabIndex = 3;
+            this.mkdDatadeNascimento.Location = new System.Drawing.Point(125, 40);
+            this.mkdDatadeNascimento.Mask = "00/00/0000";
+            this.mkdDatadeNascimento.Name = "mkdDatadeNascimento";
+            this.mkdDatadeNascimento.Size = new System.Drawing.Size(80, 20);
+            this.mkdDatadeNascimento.TabIndex = 3;
             // 
             // label3
             // 
@@ -117,6 +117,7 @@
             this.btnEnviar.TabIndex = 8;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // label5
             // 
@@ -148,7 +149,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtRaca);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mkdDatadeNascimento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
@@ -166,7 +167,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mkdDatadeNascimento;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtRaca;
         private System.Windows.Forms.Label label4;
