@@ -48,38 +48,36 @@ namespace PetPamonha
 
         }
 
+
+
         private void CadastroPet_Load(object sender, EventArgs e)
+        
+        // No form "CadastroPet" há uma combobox que pede "Dono" do pet. Neste caso acho todos os "nomes" de Clientes cadastrados e preencho na combobox atraves dos métodos do "comboBox";    
         {
 
+            DAOCliente daoCliente = new DAOCliente();
 
-            
 
 
-            /* 
-             
-             for (int i = 0; i < cliente.getClientes().Count; i++){
-            
-             cmbDono.Itens.add(cliente.getClientes().***);
-             
-            {
-   
-                 Muitas duvidas...
-             * 
-             * Mostrar o nome dos clientes na comboBox...
-             * usar um arrayList de "cliente" ArrayList<cliente>
-             * 
-             * 
+            for(int i = 0; i < daoCliente.clientes.Count; i++){
+
+            cmbDono.Items.Add(daoCliente.clientes[i].Nome);
 
             }
+
+
+
+
+         }
            
-            */
+            
 
             
 
 
 
 
-        }
+        
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

@@ -64,6 +64,7 @@
     <Compile Include="Cadastros\CadastroTratamento.Designer.cs">
       <DependentUpon>CadastroTratamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente.cs" />
     <Compile Include="DAO\DAOTratamento.cs" />
     <Compile Include="Checkin.cs">
       <SubType>Form</SubType>

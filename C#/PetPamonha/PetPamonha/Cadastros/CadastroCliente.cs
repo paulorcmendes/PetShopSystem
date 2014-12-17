@@ -30,14 +30,21 @@ namespace PetPamonha
             email = txtEmail.Text;
             telefone = mktTelefone.Text;
 
+            Cliente cliente = new Cliente();
 
-
-
-            DAOCliente cliente = new DAOCliente();
-
-            cliente.insereCliente(nome, cpf, email, telefone);
+            cliente.Nome = nome;
+            cliente.CPF = cpf;
+            cliente.Email = email;
+            cliente.Telefone = telefone;
+           
             
+            DAOCliente Daocliente = new DAOCliente();
 
+            Daocliente.clientes.Add(cliente); // pode-se criar um método na DAOCliente para armazenar o cliente na arrayList. Serve para o projeto final de "Padrões de Projeto";
+
+            Daocliente.insereCliente(nome, cpf, email, telefone);
+
+            
 
 
 
