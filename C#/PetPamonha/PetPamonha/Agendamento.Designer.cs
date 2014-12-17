@@ -92,6 +92,7 @@
             this.btnAgendar.TabIndex = 10;
             this.btnAgendar.Text = "Agendar";
             this.btnAgendar.UseVisualStyleBackColor = false;
+            this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
             // 
             // comboBox1
             // 

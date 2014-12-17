@@ -15,5 +15,30 @@ namespace PetPamonha
         {
             InitializeComponent();
         }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+
+            String nome;
+            String cpf;
+            String email;
+            String telefone;
+
+
+            nome = txtNome.Text;
+            cpf = mktCPF.Text;
+            email = txtEmail.Text;
+            telefone = mktTelefone.Text;
+
+            DAOCliente cliente = new DAOCliente();
+
+            cliente.insereCliente(nome, cpf, email, telefone);
+            
+
+
+
+
+
+        }
     }
 }

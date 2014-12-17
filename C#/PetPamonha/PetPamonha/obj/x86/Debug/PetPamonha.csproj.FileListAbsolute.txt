@@ -20,3 +20,17 @@ C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.ex
 C:\reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.pdb
 C:\Reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.csprojResolveAssemblyReference.cache
 C:\Reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Cadastros.CadastroTratamento.resources
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.exe
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.pdb
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\bin\Debug\PetPamonha.exe
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\bin\Debug\PetPamonha.pdb
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.csprojResolveAssemblyReference.cache
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Agendamento.resources
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.CadastroPet.resources
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Cadastros.CadastroTratamento.resources
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Checkin.resources
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.CadastroCliente.resources
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.ListadePets.resources
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Properties.Resources.resources
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.telaPrincipal.resources
+C:\Git\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.csproj.GenerateResource.Cache
