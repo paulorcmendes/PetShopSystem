@@ -18,5 +18,10 @@ namespace PetPamonha
 
 
         }
+
+        internal void removeTratamento(string rga)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

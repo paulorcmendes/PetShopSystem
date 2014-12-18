@@ -99,5 +99,10 @@ namespace PetPamonha
 
 
         }
+
+        private void mktRGA_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

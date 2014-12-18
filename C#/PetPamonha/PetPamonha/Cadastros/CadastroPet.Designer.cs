@@ -136,6 +136,7 @@
             this.mktRGA.Name = "mktRGA";
             this.mktRGA.Size = new System.Drawing.Size(59, 20);
             this.mktRGA.TabIndex = 10;
+            this.mktRGA.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mktRGA_MaskInputRejected);
             // 
             // CadastroPet
             // 

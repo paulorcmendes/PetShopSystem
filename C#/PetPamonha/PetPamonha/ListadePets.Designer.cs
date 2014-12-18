@@ -119,7 +119,7 @@
             this.btnTratado.Name = "btnTratado";
             this.btnTratado.Size = new System.Drawing.Size(88, 52);
             this.btnTratado.TabIndex = 4;
-            this.btnTratado.Text = "Tratado!!";
+            this.btnTratado.Text = "Finalizar Tratamento";
             this.btnTratado.UseVisualStyleBackColor = true;
             this.btnTratado.Click += new System.EventHandler(this.button1_Click);
             // 

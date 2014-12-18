@@ -24,6 +24,17 @@ namespace PetPamonha
         private void button1_Click(object sender, EventArgs e)
         {
 
+            String rga;
+            rga = txtRGAterminados.Text;
+
+            DAOTratamento daoTratamento = new DAOTratamento();
+
+            daoTratamento.removeTratamento(rga);
+
+
+
+
+
         }
 
         private void listAnimaisTratamento_SelectedIndexChanged(object sender, EventArgs e)
