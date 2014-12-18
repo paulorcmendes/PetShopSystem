@@ -18,7 +18,14 @@ namespace PetPamonha
 
         private void Agendamento_Load(object sender, EventArgs e)
         {
+            DAOPet daoPet = new DAOPet();
 
+            for (int i = 0; i < daoPet.pets.Count; i++)
+            {
+
+                cmbNome.Items.Add(daoPet.getListPets()[i].Nome);
+
+            }
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -33,6 +40,25 @@ namespace PetPamonha
 
         private void btnAgendar_Click(object sender, EventArgs e)
         {
+
+            String nome;
+            DateTime data;
+
+            nome = cmbNome.Text;
+            data = dtpData.Value.Date; // converter para o formato "dd/MM/yy" (String) compatível com o formato do banco de dados na classe DAO.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -64,7 +64,7 @@
     <Compile Include="Cadastros\CadastroTratamento.Designer.cs">
       <DependentUpon>CadastroTratamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cliente.cs" />
+    <Compile Include="Classes com Properties\Cliente.cs" />
     <Compile Include="DAO\DAOTratamento.cs" />
     <Compile Include="Checkin.cs">
       <SubType>Form</SubType>
@@ -86,7 +86,7 @@
     <Compile Include="ListadePets.Designer.cs">
       <DependentUpon>ListadePets.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pet.cs" />
+    <Compile Include="Classes com Properties\Pet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="telaPrincipal.cs">
@@ -95,6 +95,7 @@
     <Compile Include="telaPrincipal.Designer.cs">
       <DependentUpon>telaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes com Properties\Tratamento.cs" />
     <EmbeddedResource Include="Agendamento.resx">
       <DependentUpon>Agendamento.cs</DependentUpon>
     </EmbeddedResource>

@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpData = new System.Windows.Forms.DateTimePicker();
             this.btnAgendar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.chkUnhas = new System.Windows.Forms.CheckBox();
             this.chkTosa = new System.Windows.Forms.CheckBox();
             this.chkBanho = new System.Windows.Forms.CheckBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbNome = new System.Windows.Forms.ComboBox();
             this.lblRaca = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblRga = new System.Windows.Forms.Label();
@@ -76,12 +76,12 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Data:";
             // 
-            // dateTimePicker1
+            // dtpData
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(52, 107);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(237, 20);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dtpData.Location = new System.Drawing.Point(52, 107);
+            this.dtpData.Name = "dtpData";
+            this.dtpData.Size = new System.Drawing.Size(237, 20);
+            this.dtpData.TabIndex = 9;
             // 
             // btnAgendar
             // 
@@ -168,14 +168,14 @@
             this.chkBanho.Text = "Banho";
             this.chkBanho.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // cmbNome
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(83, 15);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(240, 21);
-            this.comboBox2.TabIndex = 14;
+            this.cmbNome.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNome.FormattingEnabled = true;
+            this.cmbNome.Location = new System.Drawing.Point(83, 15);
+            this.cmbNome.Name = "cmbNome";
+            this.cmbNome.Size = new System.Drawing.Size(240, 21);
+            this.cmbNome.TabIndex = 14;
             // 
             // lblRaca
             // 
@@ -211,12 +211,12 @@
             this.Controls.Add(this.lblRga);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblRaca);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmbNome);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnAgendar);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpData);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -238,7 +238,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.Button btnAgendar;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
@@ -247,7 +247,7 @@
         private System.Windows.Forms.CheckBox chkUnhas;
         private System.Windows.Forms.CheckBox chkTosa;
         private System.Windows.Forms.CheckBox chkBanho;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbNome;
         private System.Windows.Forms.Label lblRaca;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblRga;
