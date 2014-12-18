@@ -35,10 +35,20 @@ namespace PetPamonha
             dono = cmbDono.Text;
 
 
+            Pet pet = new Pet();
 
-            DAOPet pet = new DAOPet();
+            pet.Nome = nome;
+            pet.DataDeNascimento = dataDeNascimento;
+            pet.Raca = raca;
+            pet.RGA = rga;
+            pet.Dono = dono;
 
-            pet.inserePet(nome, dataDeNascimento, raca, rga, dono);
+
+            DAOPet daoPet = new DAOPet();
+
+            daoPet.pets.Add(pet);
+
+            daoPet.inserePet(nome, dataDeNascimento, raca, rga, dono);
 
 
 
@@ -61,7 +71,7 @@ namespace PetPamonha
 
             for(int i = 0; i < daoCliente.clientes.Count; i++){
 
-            cmbDono.Items.Add(daoCliente.clientes[i].Nome);
+            cmbDono.Items.Add(daoCliente.getListClientes()[i].Nome);
 
             }
 

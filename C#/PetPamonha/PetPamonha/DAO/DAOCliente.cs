@@ -14,8 +14,10 @@ namespace PetPamonha
     class DAOCliente
     {
 
-
+        //atributos
         public List<Cliente> clientes = new List<Cliente>();
+
+
 
 
         internal void insereCliente(string nome, string cpf, string email, string telefone)
@@ -27,7 +29,7 @@ namespace PetPamonha
         }
 
 
-        List<Cliente> getListClientes(){
+        internal List<Cliente> getListClientes(){
         
             return clientes;
         

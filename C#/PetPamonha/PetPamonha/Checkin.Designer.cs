@@ -33,7 +33,7 @@
             this.lblRga = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblRaca = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbNome = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -74,14 +74,15 @@
             this.lblRaca.Size = new System.Drawing.Size(0, 13);
             this.lblRaca.TabIndex = 21;
             // 
-            // comboBox2
+            // cmbNome
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(83, 6);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(240, 21);
-            this.comboBox2.TabIndex = 20;
+            this.cmbNome.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNome.FormattingEnabled = true;
+            this.cmbNome.Location = new System.Drawing.Point(83, 6);
+            this.cmbNome.Name = "cmbNome";
+            this.cmbNome.Size = new System.Drawing.Size(240, 21);
+            this.cmbNome.TabIndex = 20;
+            this.cmbNome.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -110,7 +111,7 @@
             this.Controls.Add(this.lblRga);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblRaca);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmbNome);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRetirar);
@@ -131,7 +132,7 @@
         private System.Windows.Forms.Label lblRga;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblRaca;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbNome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
     }

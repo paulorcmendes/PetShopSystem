@@ -92,7 +92,7 @@
             // btnEnviar
             // 
             this.btnEnviar.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnEnviar.Location = new System.Drawing.Point(91, 153);
+            this.btnEnviar.Location = new System.Drawing.Point(95, 152);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(108, 44);
             this.btnEnviar.TabIndex = 6;
