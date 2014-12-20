@@ -7,37 +7,18 @@ namespace PetPamonha
 {
     class DAOPet
     {
-
-        //atributos
-        public List<Pet> pets = new List<Pet>();
-
-
-
-        internal void inserePet(string nome, string dataDeNascimento, string raca, string rga, string dono)
+       public void inserePet(Pet pet)
         {
-
-            throw new NotImplementedException();
-
-
         }
 
-
-
-        internal void removePet(string nome)
+        public void removePet(Pet pet)
         {
-            throw new NotImplementedException();
         }
 
-
-
-
-        internal List<Pet> getListPets()
+        public List<Pet> getListPets()
         {
 
             return pets;
-
         }
-
-
     }
 }

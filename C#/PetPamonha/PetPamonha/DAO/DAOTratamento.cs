@@ -8,20 +8,14 @@ namespace PetPamonha
     class DAOTratamento
     {
 
-
-
-
-        internal void insereTratamento(string nome, string preco, string duracaoMedia)
+       public void insereTratamento(string nome, string preco, string duracaoMedia)
         {
-
-            throw new NotImplementedException();
-
 
         }
 
-        internal void removeTratamento(string rga)
+        public void removeTratamento(string rga)
         {
-            throw new NotImplementedException();
+           
         }
     }
 }

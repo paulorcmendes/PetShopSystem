@@ -7,43 +7,19 @@ using System.Collections;
 
 namespace PetPamonha
 {
-
-    
-
-
     class DAOCliente
     {
 
-        //atributos
-        public List<Cliente> clientes = new List<Cliente>();
-
-
-
-
-        internal void insereCliente(string nome, string cpf, string email, string telefone)
+        public void insereCliente(Cliente cliente)
         {
-
-            throw new NotImplementedException();
-
 
         }
 
 
-        internal List<Cliente> getListClientes(){
+        public List<Cliente> getListClientes(){
         
             return clientes;
         
         }
-
-
-        
-       
-
-
-
-
-
-
-
     }
 }
