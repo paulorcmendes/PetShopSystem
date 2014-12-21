@@ -8,16 +8,23 @@ namespace PetPamonha
     class Cliente
     {
 
-
+        private int idCliente;
         private String nome;
         private String cpf;
         private String email;
         private String telefone;
 
-        
 
 
 
+        public int IdCliente{
+            get {
+                return this.idCliente;
+            }
+            set {
+                this.idCliente = value;
+            }
+        }
         public String Nome
         {
 

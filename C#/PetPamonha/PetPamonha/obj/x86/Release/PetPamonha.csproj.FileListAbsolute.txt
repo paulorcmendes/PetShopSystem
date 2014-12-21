@@ -10,3 +10,17 @@ C:\Users\luis\Desktop\pamonhaDeveloper\PetShop\C#\PetPamonha\PetPamonha\obj\x86\
 C:\Users\luis\Desktop\pamonhaDeveloper\PetShop\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.pdb
 C:\Reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.exe
 C:\Reposit\pamonhaDeveloper\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.pdb
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\bin\Release\PetPamonha.exe
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\bin\Release\PetPamonha.pdb
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.Agendamento.resources
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.CadastroPet.resources
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.Cadastros.CadastroTratamento.resources
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.Checkin.resources
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.CadastroCliente.resources
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.ListadePets.resources
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.Properties.Resources.resources
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.telaPrincipal.resources
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.csproj.GenerateResource.Cache
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.exe
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.pdb
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.csprojResolveAssemblyReference.cache

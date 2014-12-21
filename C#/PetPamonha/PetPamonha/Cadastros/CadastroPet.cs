@@ -19,7 +19,6 @@ namespace PetPamonha
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-
             String nome;
             String dataDeNascimento;
             String raca;
@@ -34,27 +33,17 @@ namespace PetPamonha
             rga = mktRGA.Text;
             dono = cmbDono.Text;
 
-
             Pet pet = new Pet();
 
             pet.Nome = nome;
             pet.DataDeNascimento = dataDeNascimento;
             pet.Raca = raca;
             pet.RGA = rga;
-            pet.Dono = dono;
+            /*pet.Dono = dono;*/
 
 
             DAOPet daoPet = new DAOPet();
-
-            daoPet.pets.Add(pet);
-
-            daoPet.inserePet(nome, dataDeNascimento, raca, rga, dono);
-
-
-
-
-
-
+            daoPet.inserePet(pet);
 
         }
 
@@ -66,12 +55,11 @@ namespace PetPamonha
         {
 
             DAOCliente daoCliente = new DAOCliente();
+            daoCliente.getListClientes();
 
+           for(int i = 0; i < daoCliente.getListClientes().Count; i++){
 
-
-            for(int i = 0; i < daoCliente.clientes.Count; i++){
-
-            cmbDono.Items.Add(daoCliente.getListClientes()[i].Nome);
+               cmbDono.Items.Add(daoCliente.getListClientes()[i].Nome +" - "+ daoCliente.getListClientes()[i].CPF);
 
             }
 

@@ -18,7 +18,7 @@ namespace PetPamonha
 
         private void ListadePets_Load(object sender, EventArgs e)
         {
-
+            ListViewItem item= new ListViewItem();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace PetPamonha
 
             DAOTratamento daoTratamento = new DAOTratamento();
 
-            daoTratamento.removeTratamento(rga);
+            /*daoTratamento.removeTratamento(rga);*/
 
 
 

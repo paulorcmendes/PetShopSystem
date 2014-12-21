@@ -27,10 +27,17 @@ namespace PetPamonha.Cadastros
             preco = mktPreco.Text;
             duracaoMedia = mktDuracaoMedia.Text;
 
+            Tratamento tratamento = new Tratamento();
 
-            DAOTratamento tratamento = new DAOTratamento();
+            tratamento.Nome = nome;
+            tratamento.Preco = double.Parse(preco).ToString("G",System.Globalization.CultureInfo.InvariantCulture);
+            tratamento.DuracaoMedia = duracaoMedia;
+            Console.WriteLine(tratamento.Preco);
 
-            tratamento.insereTratamento(nome, preco, duracaoMedia);
+
+            DAOTratamento daoTratamento = new DAOTratamento();
+
+            daoTratamento.insereTratamento(tratamento);
 
 
         }

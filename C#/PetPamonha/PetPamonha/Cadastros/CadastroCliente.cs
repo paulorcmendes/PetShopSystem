@@ -18,7 +18,6 @@ namespace PetPamonha
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-
             String nome;
             String cpf;
             String email;
@@ -36,19 +35,13 @@ namespace PetPamonha
             cliente.CPF = cpf;
             cliente.Email = email;
             cliente.Telefone = telefone;
-           
             
             DAOCliente Daocliente = new DAOCliente();
 
-            Daocliente.clientes.Add(cliente); // pode-se criar um método na DAOCliente para armazenar o cliente na arrayList. Serve para o projeto final de "Padrões de Projeto";
 
-            Daocliente.insereCliente(nome, cpf, email, telefone);
+            Daocliente.insereCliente(cliente);
 
             
-
-
-
-
         }
     }
 }

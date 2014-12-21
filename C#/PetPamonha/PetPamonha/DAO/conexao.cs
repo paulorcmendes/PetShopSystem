@@ -6,14 +6,16 @@ using MySql.Data.MySqlClient;
 
 namespace PetPamonha.DAO
 {
-    class conexao
+    class Conexao
     {
         private MySqlConnection con;
-        String conexao = "server=localhost;database=petpamonha;uid=root;password=    ";
+        private String conexao = "server=localhost;database=petpamonha;uid=root;password=1234";
 
-        public MySqlConnection Con {
-            get {
-                return con = new MySqlConnection(this.conexao);            
+        public MySqlConnection Con
+        {
+            get
+            {
+                return con = new MySqlConnection(this.conexao);
             }
         }
     }

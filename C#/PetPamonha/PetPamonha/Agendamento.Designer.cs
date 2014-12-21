@@ -36,16 +36,12 @@
             this.btnAgendar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chkRelaxamento = new System.Windows.Forms.CheckBox();
-            this.chkUnhas = new System.Windows.Forms.CheckBox();
-            this.chkTosa = new System.Windows.Forms.CheckBox();
-            this.chkBanho = new System.Windows.Forms.CheckBox();
             this.cmbNome = new System.Windows.Forms.ComboBox();
             this.lblRaca = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblRga = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbTratamento = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +82,7 @@
             // btnAgendar
             // 
             this.btnAgendar.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnAgendar.Location = new System.Drawing.Point(236, 200);
+            this.btnAgendar.Location = new System.Drawing.Point(242, 238);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(112, 44);
             this.btnAgendar.TabIndex = 10;
@@ -115,59 +111,6 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Hora:";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.chkRelaxamento);
-            this.groupBox1.Controls.Add(this.chkUnhas);
-            this.groupBox1.Controls.Add(this.chkTosa);
-            this.groupBox1.Controls.Add(this.chkBanho);
-            this.groupBox1.Location = new System.Drawing.Point(344, 30);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(226, 115);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tratamentos";
-            // 
-            // chkRelaxamento
-            // 
-            this.chkRelaxamento.AutoSize = true;
-            this.chkRelaxamento.Location = new System.Drawing.Point(129, 68);
-            this.chkRelaxamento.Name = "chkRelaxamento";
-            this.chkRelaxamento.Size = new System.Drawing.Size(88, 17);
-            this.chkRelaxamento.TabIndex = 3;
-            this.chkRelaxamento.Text = "Relaxamento";
-            this.chkRelaxamento.UseVisualStyleBackColor = true;
-            // 
-            // chkUnhas
-            // 
-            this.chkUnhas.AutoSize = true;
-            this.chkUnhas.Location = new System.Drawing.Point(129, 32);
-            this.chkUnhas.Name = "chkUnhas";
-            this.chkUnhas.Size = new System.Drawing.Size(57, 17);
-            this.chkUnhas.TabIndex = 2;
-            this.chkUnhas.Text = "Unhas";
-            this.chkUnhas.UseVisualStyleBackColor = true;
-            // 
-            // chkTosa
-            // 
-            this.chkTosa.AutoSize = true;
-            this.chkTosa.Location = new System.Drawing.Point(16, 68);
-            this.chkTosa.Name = "chkTosa";
-            this.chkTosa.Size = new System.Drawing.Size(50, 17);
-            this.chkTosa.TabIndex = 1;
-            this.chkTosa.Text = "Tosa";
-            this.chkTosa.UseVisualStyleBackColor = true;
-            // 
-            // chkBanho
-            // 
-            this.chkBanho.AutoSize = true;
-            this.chkBanho.Location = new System.Drawing.Point(16, 32);
-            this.chkBanho.Name = "chkBanho";
-            this.chkBanho.Size = new System.Drawing.Size(57, 17);
-            this.chkBanho.TabIndex = 0;
-            this.chkBanho.Text = "Banho";
-            this.chkBanho.UseVisualStyleBackColor = true;
-            // 
             // cmbNome
             // 
             this.cmbNome.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -176,6 +119,7 @@
             this.cmbNome.Name = "cmbNome";
             this.cmbNome.Size = new System.Drawing.Size(240, 21);
             this.cmbNome.TabIndex = 14;
+            this.cmbNome.SelectedIndexChanged += new System.EventHandler(this.cmbNome_SelectedIndexChanged);
             // 
             // lblRaca
             // 
@@ -202,17 +146,35 @@
             this.lblRga.Size = new System.Drawing.Size(0, 13);
             this.lblRga.TabIndex = 17;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 179);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Tratamento:";
+            // 
+            // cmbTratamento
+            // 
+            this.cmbTratamento.FormattingEnabled = true;
+            this.cmbTratamento.Location = new System.Drawing.Point(83, 179);
+            this.cmbTratamento.Name = "cmbTratamento";
+            this.cmbTratamento.Size = new System.Drawing.Size(121, 21);
+            this.cmbTratamento.TabIndex = 19;
+            // 
             // Agendamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(582, 256);
+            this.ClientSize = new System.Drawing.Size(582, 294);
+            this.Controls.Add(this.cmbTratamento);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.lblRga);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblRaca);
             this.Controls.Add(this.cmbNome);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnAgendar);
@@ -224,10 +186,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Agendamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agendamento";
             this.Load += new System.EventHandler(this.Agendamento_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,14 +203,11 @@
         private System.Windows.Forms.Button btnAgendar;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox chkRelaxamento;
-        private System.Windows.Forms.CheckBox chkUnhas;
-        private System.Windows.Forms.CheckBox chkTosa;
-        private System.Windows.Forms.CheckBox chkBanho;
         private System.Windows.Forms.ComboBox cmbNome;
         private System.Windows.Forms.Label lblRaca;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblRga;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmbTratamento;
     }
 }

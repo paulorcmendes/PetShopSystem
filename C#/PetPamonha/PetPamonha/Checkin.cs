@@ -31,12 +31,12 @@ namespace PetPamonha
            
             DAOPet daoPet = new DAOPet();
 
-            for (int i = 0; i < daoPet.pets.Count; i++)
+           /* for (int i = 0; i < daoPet.pets.Count; i++)
             {
 
                 cmbNome.Items.Add(daoPet.getListPets()[i].Nome);
 
-            }
+            }*/
 
         }
 
@@ -51,7 +51,7 @@ namespace PetPamonha
 
             DAOPet daoPet = new DAOPet();
 
-            daoPet.removePet(nome);
+           /* daoPet.removePet(nome);*/
 
         }
 

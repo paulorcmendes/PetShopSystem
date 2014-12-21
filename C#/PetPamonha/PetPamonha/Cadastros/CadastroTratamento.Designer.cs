@@ -74,9 +74,9 @@
             // mktPreco
             // 
             this.mktPreco.Location = new System.Drawing.Point(59, 37);
-            this.mktPreco.Mask = "00.00";
+            this.mktPreco.Mask = "0000.00";
             this.mktPreco.Name = "mktPreco";
-            this.mktPreco.Size = new System.Drawing.Size(39, 20);
+            this.mktPreco.Size = new System.Drawing.Size(50, 20);
             this.mktPreco.TabIndex = 4;
             // 
             // mktDuracaoMedia

@@ -7,11 +7,21 @@ namespace PetPamonha
 {
     class Tratamento
     {
-
+        private int idTratamento;
         private String nome;
-        private String preço;
+        private String preco;
         private String duracaoMedia;
 
+
+        public int IdTratamento 
+        {
+            get {
+                return this.idTratamento;
+            }
+            set {
+                this.idTratamento = value;
+            }
+        }
         public String Nome
         {
 
@@ -33,20 +43,18 @@ namespace PetPamonha
 
 
 
-        public String Preço
+        public String Preco
         {
 
 
             get
             {
-                return this.preço;
+                return this.preco;
             }
-
-
 
             set
             {
-                this.preço = value;
+                this.preco = value;
             }
 
 
