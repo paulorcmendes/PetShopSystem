@@ -10,10 +10,12 @@ namespace PetPamonha.DAO
     class DAOPetTratamento
     {
         private MySqlConnection con;
+        private Formatador formatar;
 
         public DAOPetTratamento()
         {
             this.con = new Conexao().Con;
+            this.formatar = new Formatador();
         }
 
         public void inserePetTratamento(PetTratamento petTratamento)
@@ -22,9 +24,10 @@ namespace PetPamonha.DAO
             {
                 this.con.Open();
                 MySqlCommand cmd = con.CreateCommand();
-                cmd.CommandText = "INSERT INTO cliente (idPet,idTratamento,dataHora,estado) VALUES(@idPet,@idTratamento,@dataHora,@estado)";
+                cmd.CommandText = "INSERT INTO petTratamento (idPet,idTratamento,dataHora,estado) VALUES(@idPet,@idTratamento,@dataHora,@estado)";
                 cmd.Parameters.AddWithValue("@idPet", petTratamento.IdPet);
                 cmd.Parameters.AddWithValue("@idTratamento", petTratamento.IdTratamento);
+                petTratamento.DataHora = formatar.formatarDataHora(petTratamento.DataHora);
                 cmd.Parameters.AddWithValue("@dataHora", petTratamento.DataHora);
                 cmd.Parameters.AddWithValue("@estado", petTratamento.Estado);
                 cmd.ExecuteNonQuery();

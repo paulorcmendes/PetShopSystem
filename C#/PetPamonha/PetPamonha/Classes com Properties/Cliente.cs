@@ -13,10 +13,17 @@ namespace PetPamonha
         private String cpf;
         private String email;
         private String telefone;
+        private String nomeCPF;
 
 
-
-
+        public String NomeCPF
+        {
+            get
+            {
+                this.nomeCPF = this.nome + " - " + this.cpf;
+                return this.nomeCPF;
+            }
+        }
         public int IdCliente{
             get {
                 return this.idCliente;

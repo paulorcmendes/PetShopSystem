@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using PetPamonha.DAO;
+using PetPamonha.Classes_com_Properties;
 
 namespace PetPamonha
 {
@@ -22,11 +24,11 @@ namespace PetPamonha
             DAOTratamento daoTratamento = new DAOTratamento();
 
             this.cmbNome.DataSource = daoPet.getListPets();
-            this.cmbNome.DisplayMember = "Nome";
+            this.cmbNome.DisplayMember = "nomeRGA";
             this.cmbNome.ValueMember = "idPet";
 
             this.cmbTratamento.DataSource = daoTratamento.getListTratamentos();
-            this.cmbTratamento.DisplayMember = "Nome";
+            this.cmbTratamento.DisplayMember = "descricao";
             this.cmbTratamento.ValueMember = "idTratamento";
         }
 
@@ -42,16 +44,23 @@ namespace PetPamonha
 
         private void btnAgendar_Click(object sender, EventArgs e)
         {
-            String nome;
-            DateTime data;
+            PetTratamento tratamento = new PetTratamento();
 
-            nome = cmbNome.Text;
-            data = dtpData.Value.Date; // converter para o formato "dd/MM/yy" (String) compatível com o formato do banco de dados na classe DAO.
+            tratamento.IdPet=(int)this.cmbNome.SelectedValue;
+            tratamento.IdTratamento = (int)this.cmbTratamento.SelectedValue;
+            tratamento.DataHora = this.dtpData.Value.ToString();
+            tratamento.Estado = true;
+
+            DAOPetTratamento petTratamento = new DAOPetTratamento();
+
+            petTratamento.inserePetTratamento(tratamento);
         }
 
         private void cmbNome_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Console.WriteLine(this.cmbNome.SelectedValue);
+            Pet pet = (Pet)this.cmbNome.SelectedItem;
+            this.txtRaca.Text = pet.Raca;
+            this.txtRGA.Text = pet.DataDeNascimento;
         }
 
         private void petBindingSource_CurrentChanged(object sender, EventArgs e)

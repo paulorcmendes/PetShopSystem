@@ -11,8 +11,16 @@ namespace PetPamonha
         private String nome;
         private String preco;
         private String duracaoMedia;
+        private String descricao;
 
-
+        public String Descricao
+        {
+            get
+            {
+                this.descricao = this.nome + " - R$" + this.preco + " - " + this.duracaoMedia;
+                return this.descricao;
+            }
+        }
         public int IdTratamento 
         {
             get {

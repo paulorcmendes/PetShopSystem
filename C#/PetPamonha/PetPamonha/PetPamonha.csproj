@@ -66,6 +66,7 @@
       <DependentUpon>CadastroTratamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes com Properties\Cliente.cs" />
+    <Compile Include="Classes com Properties\Formatador.cs" />
     <Compile Include="Classes com Properties\PetTratamento.cs" />
     <Compile Include="DAO\Conexao.cs" />
     <Compile Include="DAO\DAOPetTratamento.cs" />

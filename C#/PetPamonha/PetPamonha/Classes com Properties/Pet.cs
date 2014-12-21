@@ -13,7 +13,16 @@ namespace PetPamonha
         private String raca;
         private String rga;
         private int dono;
+        private String nomeRGA;
 
+        public String NomeRGA
+        {
+            get
+            {
+                this.nomeRGA = this.Nome + " - " + this.RGA;
+                return this.nomeRGA;
+            }
+        }
 
         public String Nome
         {
@@ -36,7 +45,6 @@ namespace PetPamonha
             set
             {
                 this.dataDeNascimento = value;
-                this.formatarData(this.dataDeNascimento);
             }
         }
 
@@ -83,27 +91,6 @@ namespace PetPamonha
             get {
                 return this.idPet;
             }   
-        }
-
-        private void formatarData(String data){
-            if (data.ElementAt(2).Equals('/'))
-            {
-                String dia, mes, ano;
-                dia = this.dataDeNascimento.Substring(0, 2);
-                mes = this.dataDeNascimento.Substring(3, 2);
-                ano = this.dataDeNascimento.Substring(6, 4);
-                String dataFormt = ano + "/" + mes + "/" + dia;
-                this.dataDeNascimento = dataFormt;
-            }
-            else {
-                String dia, mes, ano;
-                dia = this.dataDeNascimento.Substring(0, 4);
-                mes = this.dataDeNascimento.Substring(5, 2);
-                ano = this.dataDeNascimento.Substring(8, 2);
-                String dataFormt = ano + "/" + mes + "/" + dia;
-                this.dataDeNascimento = dataFormt;
-            }
-            
         }
     }
 }

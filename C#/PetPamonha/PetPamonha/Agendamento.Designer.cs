@@ -34,14 +34,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dtpData = new System.Windows.Forms.DateTimePicker();
             this.btnAgendar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.cmbNome = new System.Windows.Forms.ComboBox();
             this.lblRaca = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblRga = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbTratamento = new System.Windows.Forms.ComboBox();
+            this.txtRaca = new System.Windows.Forms.TextBox();
+            this.txtRGA = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -90,27 +90,6 @@
             this.btnAgendar.UseVisualStyleBackColor = false;
             this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "13:45",
-            "14:50",
-            "18:30"});
-            this.comboBox1.Location = new System.Drawing.Point(52, 141);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 144);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Hora:";
-            // 
             // cmbNome
             // 
             this.cmbNome.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -134,9 +113,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(13, 78);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 13);
+            this.label6.Size = new System.Drawing.Size(107, 13);
             this.label6.TabIndex = 16;
-            this.label6.Text = "RGA: ";
+            this.label6.Text = "Data de Nascimento:";
             // 
             // lblRga
             // 
@@ -160,8 +139,24 @@
             this.cmbTratamento.FormattingEnabled = true;
             this.cmbTratamento.Location = new System.Drawing.Point(83, 179);
             this.cmbTratamento.Name = "cmbTratamento";
-            this.cmbTratamento.Size = new System.Drawing.Size(121, 21);
+            this.cmbTratamento.Size = new System.Drawing.Size(240, 21);
             this.cmbTratamento.TabIndex = 19;
+            // 
+            // txtRaca
+            // 
+            this.txtRaca.Location = new System.Drawing.Point(83, 50);
+            this.txtRaca.Name = "txtRaca";
+            this.txtRaca.ReadOnly = true;
+            this.txtRaca.Size = new System.Drawing.Size(100, 20);
+            this.txtRaca.TabIndex = 20;
+            // 
+            // txtRGA
+            // 
+            this.txtRGA.Location = new System.Drawing.Point(126, 76);
+            this.txtRGA.Name = "txtRGA";
+            this.txtRGA.ReadOnly = true;
+            this.txtRGA.Size = new System.Drawing.Size(100, 20);
+            this.txtRGA.TabIndex = 21;
             // 
             // Agendamento
             // 
@@ -169,14 +164,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(582, 294);
+            this.Controls.Add(this.txtRGA);
+            this.Controls.Add(this.txtRaca);
             this.Controls.Add(this.cmbTratamento);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblRga);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblRaca);
             this.Controls.Add(this.cmbNome);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnAgendar);
             this.Controls.Add(this.dtpData);
             this.Controls.Add(this.label2);
@@ -201,13 +196,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.Button btnAgendar;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbNome;
         private System.Windows.Forms.Label lblRaca;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblRga;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbTratamento;
+        private System.Windows.Forms.TextBox txtRaca;
+        private System.Windows.Forms.TextBox txtRGA;
     }
 }

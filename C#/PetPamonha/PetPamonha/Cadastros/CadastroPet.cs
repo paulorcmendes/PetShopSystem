@@ -23,7 +23,7 @@ namespace PetPamonha
             String dataDeNascimento;
             String raca;
             String rga;
-            String dono;
+            int dono;
 
 
 
@@ -31,7 +31,7 @@ namespace PetPamonha
             dataDeNascimento = mkdDatadeNascimento.Text;
             raca = txtRaca.Text;
             rga = mktRGA.Text;
-            dono = cmbDono.Text;
+            dono = (int)cmbDono.SelectedValue;
 
             Pet pet = new Pet();
 
@@ -39,7 +39,7 @@ namespace PetPamonha
             pet.DataDeNascimento = dataDeNascimento;
             pet.Raca = raca;
             pet.RGA = rga;
-            /*pet.Dono = dono;*/
+            pet.Dono = dono;
 
 
             DAOPet daoPet = new DAOPet();
@@ -49,42 +49,16 @@ namespace PetPamonha
 
 
 
-        private void CadastroPet_Load(object sender, EventArgs e)
-        
-        // No form "CadastroPet" há uma combobox que pede "Dono" do pet. Neste caso acho todos os "nomes" de Clientes cadastrados e preencho na combobox atraves dos métodos do "comboBox";    
-        {
-
-            DAOCliente daoCliente = new DAOCliente();
-            daoCliente.getListClientes();
-
-           for(int i = 0; i < daoCliente.getListClientes().Count; i++){
-
-               cmbDono.Items.Add(daoCliente.getListClientes()[i].Nome +" - "+ daoCliente.getListClientes()[i].CPF);
-
-            }
-
-
-
-
-         }
-           
+        private void CadastroPet_Load(object sender, EventArgs e){
+            DAOCliente c = new DAOCliente();
             
-
-            
-
-
-
-
-        
+            this.cmbDono.DataSource = c.getListClientes();
+            this.cmbDono.DisplayMember = "nomeCPF";
+            this.cmbDono.ValueMember = "idCliente";
+         }       
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
-        
-
-
-
 
         }
 
