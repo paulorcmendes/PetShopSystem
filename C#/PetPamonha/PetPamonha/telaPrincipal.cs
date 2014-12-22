@@ -22,28 +22,33 @@ namespace PetPamonha
         private void menuCliente_Click(object sender, EventArgs e)
         {
             CadastroCliente cadastroCliente = new CadastroCliente();
-            cadastroCliente.Show();
+            cadastroCliente.ShowDialog(this);
         }
 
         private void menuPet_Click(object sender, EventArgs e)
         {
             CadastroPet cadastroPet = new CadastroPet();
-            cadastroPet.Show();
+            cadastroPet.ShowDialog(this);
         }
 
         private void menuTratamento_Click(object sender, EventArgs e)
         {
             CadastroTratamento cadastroTratamento = new CadastroTratamento();
-            cadastroTratamento.Show();
+            cadastroTratamento.ShowDialog(this);
         }
 
         private void menuListaDePets_Click(object sender, EventArgs e)
         {
             ListadePets listadePets = new ListadePets();
-            listadePets.Show();
+            listadePets.ShowDialog(this);
         }
 
         private void telaPrincipal_Load(object sender, EventArgs e)
+        {
+            atualizarListV();
+        }
+
+        private void atualizarListV()
         {
             List<PetTratamento> listaDeTratamentos = new List<PetTratamento>();
             DAOPetTratamento petTratamento = new DAOPetTratamento();
@@ -63,16 +68,17 @@ namespace PetPamonha
                 String data = listaDeTratamentos[i].DataHora;
                 Boolean estado = listaDeTratamentos[i].Estado;
 
-                if(estado == true){
+                if (estado == true)
+                {
                     item.Text = pet.Nome;
                     item.SubItems.Add(pet.RGA);
                     item.SubItems.Add(cliente.Nome);
                     item.SubItems.Add(cliente.Telefone);
                     item.SubItems.Add(tratamento.Nome);
                     item.SubItems.Add(listaDeTratamentos[i].DataHora);
-                    item.SubItems.Add(f.calcularTermino(listaDeTratamentos[i].DataHora,tratamento.DuracaoMedia));
+                    item.SubItems.Add(f.calcularTermino(listaDeTratamentos[i].DataHora, tratamento.DuracaoMedia));
                     item.SubItems.Add("Em Andamento");
-                    
+
                     this.listView1.Items.Add(item);
                 }
 
@@ -89,20 +95,21 @@ namespace PetPamonha
                 this.listView1.SelectedItems[0].Remove();
             }
             else{
-
+                MessageBox.Show("Selecione na tabela o que você quer remover!","Erro");
             }
         }
 
         private void finalizadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ListadePets listadePets = new ListadePets();
-            listadePets.Show();
+            listadePets.ShowDialog(this);
         }
 
         private void btCheckin_Click(object sender, EventArgs e)
         {
             Agendamento agendamento = new Agendamento();
-            agendamento.Show();
+            agendamento.ShowDialog(this);
+            this.atualizarListV();
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -113,7 +120,8 @@ namespace PetPamonha
         private void checkinToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Agendamento agendamento = new Agendamento();
-            agendamento.Show();
+            agendamento.ShowDialog(this);
+            this.atualizarListV();
         }
 
     }

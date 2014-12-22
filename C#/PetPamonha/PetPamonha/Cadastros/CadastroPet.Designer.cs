@@ -72,7 +72,7 @@
             this.mkdDatadeNascimento.Mask = "00/00/0000";
             this.mkdDatadeNascimento.Name = "mkdDatadeNascimento";
             this.mkdDatadeNascimento.Size = new System.Drawing.Size(80, 20);
-            this.mkdDatadeNascimento.TabIndex = 3;
+            this.mkdDatadeNascimento.TabIndex = 2;
             // 
             // label3
             // 
@@ -88,7 +88,7 @@
             this.txtRaca.Location = new System.Drawing.Point(125, 69);
             this.txtRaca.Name = "txtRaca";
             this.txtRaca.Size = new System.Drawing.Size(145, 20);
-            this.txtRaca.TabIndex = 5;
+            this.txtRaca.TabIndex = 3;
             // 
             // label4
             // 
@@ -106,7 +106,7 @@
             this.cmbDono.Location = new System.Drawing.Point(125, 135);
             this.cmbDono.Name = "cmbDono";
             this.cmbDono.Size = new System.Drawing.Size(216, 21);
-            this.cmbDono.TabIndex = 7;
+            this.cmbDono.TabIndex = 5;
             this.cmbDono.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnEnviar
@@ -115,7 +115,7 @@
             this.btnEnviar.Location = new System.Drawing.Point(116, 176);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(108, 44);
-            this.btnEnviar.TabIndex = 8;
+            this.btnEnviar.TabIndex = 6;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = false;
             this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
@@ -135,11 +135,12 @@
             this.mktRGA.Mask = "000.000";
             this.mktRGA.Name = "mktRGA";
             this.mktRGA.Size = new System.Drawing.Size(59, 20);
-            this.mktRGA.TabIndex = 10;
+            this.mktRGA.TabIndex = 4;
             this.mktRGA.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mktRGA_MaskInputRejected);
             // 
             // CadastroPet
             // 
+            this.AcceptButton = this.btnEnviar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -158,7 +159,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CadastroPet";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cadastro de Pet";
             this.Load += new System.EventHandler(this.CadastroPet_Load);
             this.ResumeLayout(false);

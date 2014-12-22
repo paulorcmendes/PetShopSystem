@@ -23,3 +23,6 @@ C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamo
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.exe
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.pdb
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.csprojResolveAssemblyReference.cache
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\bin\Release\pt-BR\PetPamonha.resources.dll
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.telaPrincipal.pt-BR.resources
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\pt-BR\PetPamonha.resources.dll

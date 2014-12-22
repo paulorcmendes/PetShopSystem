@@ -32,7 +32,6 @@ namespace PetPamonha.Cadastros
             tratamento.Nome = nome;
             tratamento.Preco = double.Parse(preco).ToString("G",System.Globalization.CultureInfo.InvariantCulture);
             tratamento.DuracaoMedia = duracaoMedia;
-            Console.WriteLine(tratamento.Preco);
 
 
             DAOTratamento daoTratamento = new DAOTratamento();
@@ -42,6 +41,7 @@ namespace PetPamonha.Cadastros
             txtNome.Text="";
             mktPreco.Clear();
             mktDuracaoMedia.Clear();
+            this.Close();
         }
     }
 }

@@ -121,7 +121,7 @@
             this.MinimizeBox = false;
             this.Name = "ListadePets";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Lista de Pets";
             this.Load += new System.EventHandler(this.ListadePets_Load);
             this.ResumeLayout(false);

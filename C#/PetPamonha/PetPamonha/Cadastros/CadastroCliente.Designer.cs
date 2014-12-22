@@ -71,7 +71,7 @@
             this.mktCPF.Mask = "000.000.000-00";
             this.mktCPF.Name = "mktCPF";
             this.mktCPF.Size = new System.Drawing.Size(89, 20);
-            this.mktCPF.TabIndex = 3;
+            this.mktCPF.TabIndex = 2;
             // 
             // label3
             // 
@@ -87,7 +87,7 @@
             this.txtEmail.Location = new System.Drawing.Point(64, 67);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(224, 20);
-            this.txtEmail.TabIndex = 5;
+            this.txtEmail.TabIndex = 3;
             // 
             // btnEnviar
             // 
@@ -95,7 +95,7 @@
             this.btnEnviar.Location = new System.Drawing.Point(96, 140);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(108, 44);
-            this.btnEnviar.TabIndex = 6;
+            this.btnEnviar.TabIndex = 5;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = false;
             this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
@@ -115,10 +115,11 @@
             this.mktTelefone.Mask = "(00)00000-0000";
             this.mktTelefone.Name = "mktTelefone";
             this.mktTelefone.Size = new System.Drawing.Size(89, 20);
-            this.mktTelefone.TabIndex = 8;
+            this.mktTelefone.TabIndex = 4;
             // 
             // CadastroCliente
             // 
+            this.AcceptButton = this.btnEnviar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -132,12 +133,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CadastroCliente";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cadastro de Clientes";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -44,6 +44,7 @@ namespace PetPamonha
             txtNome.Text = "";
             txtEmail.Text="";
             mktTelefone.Clear();
+            this.Close();
         }
     }
 }

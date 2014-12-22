@@ -54,6 +54,7 @@ namespace PetPamonha
             DAOPetTratamento petTratamento = new DAOPetTratamento();
 
             petTratamento.inserePetTratamento(tratamento);
+            this.Close();
         }
 
         private void cmbNome_SelectedIndexChanged(object sender, EventArgs e)

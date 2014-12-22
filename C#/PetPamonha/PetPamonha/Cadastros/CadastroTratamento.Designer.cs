@@ -100,6 +100,7 @@
             // 
             // CadastroTratamento
             // 
+            this.AcceptButton = this.btnCadastrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -114,7 +115,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CadastroTratamento";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cadastro de Tratamentos";
             this.ResumeLayout(false);
             this.PerformLayout();

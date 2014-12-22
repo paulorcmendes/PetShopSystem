@@ -77,7 +77,7 @@
             this.dtpData.Location = new System.Drawing.Point(136, 104);
             this.dtpData.Name = "dtpData";
             this.dtpData.Size = new System.Drawing.Size(237, 20);
-            this.dtpData.TabIndex = 9;
+            this.dtpData.TabIndex = 2;
             // 
             // btnAgendar
             // 
@@ -85,7 +85,7 @@
             this.btnAgendar.Location = new System.Drawing.Point(146, 191);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(112, 44);
-            this.btnAgendar.TabIndex = 10;
+            this.btnAgendar.TabIndex = 4;
             this.btnAgendar.Text = "Checkin";
             this.btnAgendar.UseVisualStyleBackColor = false;
             this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
@@ -97,7 +97,7 @@
             this.cmbNome.Location = new System.Drawing.Point(136, 15);
             this.cmbNome.Name = "cmbNome";
             this.cmbNome.Size = new System.Drawing.Size(240, 21);
-            this.cmbNome.TabIndex = 14;
+            this.cmbNome.TabIndex = 1;
             this.cmbNome.SelectedIndexChanged += new System.EventHandler(this.cmbNome_SelectedIndexChanged);
             // 
             // lblRaca
@@ -140,7 +140,7 @@
             this.cmbTratamento.Location = new System.Drawing.Point(136, 142);
             this.cmbTratamento.Name = "cmbTratamento";
             this.cmbTratamento.Size = new System.Drawing.Size(240, 21);
-            this.cmbTratamento.TabIndex = 19;
+            this.cmbTratamento.TabIndex = 3;
             // 
             // txtRaca
             // 
@@ -160,6 +160,7 @@
             // 
             // Agendamento
             // 
+            this.AcceptButton = this.btnAgendar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -182,7 +183,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Agendamento";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Checkin";
             this.Load += new System.EventHandler(this.Agendamento_Load);
             this.ResumeLayout(false);

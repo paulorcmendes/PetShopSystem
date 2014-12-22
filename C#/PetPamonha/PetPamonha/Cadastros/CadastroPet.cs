@@ -49,6 +49,7 @@ namespace PetPamonha
             mkdDatadeNascimento.Clear();
             txtRaca.Text = "";
             mktRGA.Clear();
+            this.Close();
         }
 
 
