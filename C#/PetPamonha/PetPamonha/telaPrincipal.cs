@@ -48,7 +48,7 @@ namespace PetPamonha
             atualizarListV();
         }
 
-        private void atualizarListV()
+        public void atualizarListV()
         {
             this.listView1.Items.Clear();
             List<PetTratamento> listaDeTratamentos = new List<PetTratamento>();
@@ -76,6 +76,7 @@ namespace PetPamonha
                     item.SubItems.Add(cliente.Nome);
                     item.SubItems.Add(cliente.Telefone);
                     item.SubItems.Add(tratamento.Nome);
+                    item.SubItems.Add(tratamento.Preco);
                     item.SubItems.Add(listaDeTratamentos[i].DataHora);
                     item.SubItems.Add(f.calcularTermino(listaDeTratamentos[i].DataHora, tratamento.DuracaoMedia));
                     item.SubItems.Add("Em Andamento");
@@ -90,10 +91,14 @@ namespace PetPamonha
         {
             if(this.listView1.Items.Count>0){
                 String rga = this.listView1.SelectedItems[0].SubItems[1].Text;
+                String preco = this.listView1.SelectedItems[0].SubItems[5].Text;
                 DAOPet daoPet = new DAOPet();
                 DAOPetTratamento petTratamento = new DAOPetTratamento();
+                //DAOTratamento daoTratamento = new DAOTratamento();
+                //Tratamento trat = daoTratamento.localizarNome(nome);
+                MessageBox.Show("Valor a ser pago: " +preco);
                 petTratamento.remover(daoPet.localizar(rga).IdPet);
-                this.listView1.SelectedItems[0].Remove();
+                this.atualizarListV();               
             }
             else{
                 MessageBox.Show("Selecione na tabela o que você quer remover!","Erro");
@@ -108,9 +113,10 @@ namespace PetPamonha
 
         private void btCheckin_Click(object sender, EventArgs e)
         {
-            Agendamento agendamento = new Agendamento();
-            agendamento.ShowDialog(this);
-            this.atualizarListV();
+            Agendamento agendamento = new Agendamento(this);
+            agendamento.ShowDialog(this);           
+            //this.atualizarListV();
+            
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -120,9 +126,9 @@ namespace PetPamonha
 
         private void checkinToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Agendamento agendamento = new Agendamento();
+            Agendamento agendamento = new Agendamento(this);
             agendamento.ShowDialog(this);
-            this.atualizarListV();
+            //this.atualizarListV();
         }
 
     }

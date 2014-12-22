@@ -158,8 +158,8 @@
   <data name="&gt;&gt;columnHeader2.Name" xml:space="preserve">
     <value>columnHeader2</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>telaPrincipal</value>
+  <data name="&gt;&gt;menuPet.Name" xml:space="preserve">
+    <value>menuPet</value>
   </data>
   <data name="&gt;&gt;columnHeader7.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -176,8 +176,8 @@
   <data name="&gt;&gt;menuListaDePets.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="menuTratamento.Text" xml:space="preserve">
-    <value>Tratamento</value>
+  <data name="columnHeader4.DisplayIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;menuListaDePets.Name" xml:space="preserve">
     <value>menuListaDePets</value>
@@ -187,6 +187,9 @@
   </data>
   <data name="columnHeader8.Text" xml:space="preserve">
     <value>Telefone</value>
+  </data>
+  <data name="&gt;&gt;columnHeader9.Name" xml:space="preserve">
+    <value>columnHeader9</value>
   </data>
   <data name="menuTelaPrincipal.Size" type="System.Drawing.Size, System.Drawing">
     <value>789, 24</value>
@@ -264,6 +267,9 @@
   <data name="columnHeader7.Width" type="System.Int32, mscorlib">
     <value>100</value>
   </data>
+  <data name="&gt;&gt;menuTelaPrincipal.Name" xml:space="preserve">
+    <value>menuTelaPrincipal</value>
+  </data>
   <data name="&gt;&gt;cadastroToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -273,14 +279,14 @@
   <data name="columnHeader4.Text" xml:space="preserve">
     <value>Estado</value>
   </data>
+  <data name="menuTratamento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
   <data name="&gt;&gt;menuTratamento.Name" xml:space="preserve">
     <value>menuTratamento</value>
   </data>
   <data name="&gt;&gt;listView1.Name" xml:space="preserve">
     <value>listView1</value>
-  </data>
-  <data name="&gt;&gt;menuPet.Name" xml:space="preserve">
-    <value>menuPet</value>
   </data>
   <data name="menuListaDePets.Text" xml:space="preserve">
     <value>Lista de Pets</value>
@@ -303,6 +309,9 @@
   <data name="&gt;&gt;btFinalizar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="columnHeader6.DisplayIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="&gt;&gt;checkinToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -315,6 +324,9 @@
   <data name="&gt;&gt;columnHeader8.Name" xml:space="preserve">
     <value>columnHeader8</value>
   </data>
+  <data name="menuCliente.Text" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
   <data name="btFinalizar.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -324,8 +336,11 @@
   <data name="&gt;&gt;btFinalizar.Name" xml:space="preserve">
     <value>btFinalizar</value>
   </data>
-  <data name="menuTratamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
+  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="columnHeader9.DisplayIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="menuPet.Text" xml:space="preserve">
     <value>Pet</value>
@@ -351,8 +366,8 @@
   <data name="columnHeader1.Width" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="&gt;&gt;menuTelaPrincipal.Name" xml:space="preserve">
-    <value>menuTelaPrincipal</value>
+  <data name="&gt;&gt;columnHeader9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btCheckin.Name" xml:space="preserve">
     <value>btCheckin</value>
@@ -375,6 +390,9 @@
   <data name="menuCliente.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 22</value>
   </data>
+  <data name="menuTratamento.Text" xml:space="preserve">
+    <value>Tratamento</value>
+  </data>
   <data name="&gt;&gt;menuPet.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -396,14 +414,14 @@
   <data name="columnHeader2.Width" type="System.Int32, mscorlib">
     <value>150</value>
   </data>
-  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>telaPrincipal</value>
   </data>
   <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="menuCliente.Text" xml:space="preserve">
-    <value>Cliente</value>
+  <data name="columnHeader1.DisplayIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;finalizadosToolStripMenuItem.Name" xml:space="preserve">
     <value>finalizadosToolStripMenuItem</value>

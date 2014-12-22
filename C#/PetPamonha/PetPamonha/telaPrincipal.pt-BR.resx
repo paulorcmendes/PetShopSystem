@@ -133,9 +133,15 @@
   <data name="programaToolStripMenuItem.Text" xml:space="preserve">
     <value>Programa</value>
   </data>
+  <data name="menuTelaPrincipal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>972, 24</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="columnHeader8.Width" type="System.Int32, mscorlib">
     <value>100</value>
+  </data>
+  <data name="columnHeader9.Text" xml:space="preserve">
+    <value>Valor</value>
   </data>
   <data name="columnHeader1.Width" type="System.Int32, mscorlib">
     <value>120</value>
@@ -144,16 +150,16 @@
     <value>120</value>
   </data>
   <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>764, 285</value>
+    <value>954, 285</value>
   </data>
   <data name="btFinalizar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 14.25pt</value>
   </data>
   <data name="btFinalizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 319</value>
+    <value>498, 319</value>
   </data>
   <data name="btFinalizar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 55</value>
+    <value>469, 55</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btCheckin.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -166,12 +172,12 @@
     <value>NoControl</value>
   </data>
   <data name="btCheckin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>375, 55</value>
+    <value>479, 55</value>
   </data>
   <data name="btCheckin.Text" xml:space="preserve">
     <value>Checkin</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>789, 386</value>
+    <value>972, 386</value>
   </data>
 </root>

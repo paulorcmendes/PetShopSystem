@@ -13,9 +13,13 @@ namespace PetPamonha
 {
     public partial class Agendamento : Form
     {
-        public Agendamento()
+        telaPrincipal tela;
+
+        public Agendamento(telaPrincipal tela)
         {
+            this.tela = tela;
             InitializeComponent();
+
         }
 
         private void Agendamento_Load(object sender, EventArgs e)
@@ -55,9 +59,11 @@ namespace PetPamonha
                 tratamento.DataHora = this.dtpData.Value.ToString();
                 tratamento.Estado = true;
 
-                DAOPetTratamento petTratamento = new DAOPetTratamento();
+                DAOPetTratamento daoPetTratamento = new DAOPetTratamento();
 
-                petTratamento.inserePetTratamento(tratamento);
+                daoPetTratamento.inserePetTratamento(tratamento);
+                this.tela.atualizarListV();
+                
                 this.Close();
             }
         }

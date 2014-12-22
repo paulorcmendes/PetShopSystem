@@ -9,7 +9,7 @@ namespace PetPamonha.DAO
     class Conexao
     {
         private MySqlConnection con;
-        private String conexao = "server=localhost;database=petpamonha;uid=root;password=1234";
+        private String conexao = "server=localhost;database=petpamonha;uid=root;password=tadashi";
 
         public MySqlConnection Con
         {

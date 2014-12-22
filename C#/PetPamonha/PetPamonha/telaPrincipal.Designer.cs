@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaPrincipal));
             this.menuTelaPrincipal = new System.Windows.Forms.MenuStrip();
+            this.programaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.finalizadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPet = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,11 +48,8 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btFinalizar = new System.Windows.Forms.Button();
-            this.programaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.finalizadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btCheckin = new System.Windows.Forms.Button();
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuTelaPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +60,33 @@
             this.programaToolStripMenuItem,
             this.cadastroToolStripMenuItem});
             this.menuTelaPrincipal.Name = "menuTelaPrincipal";
+            // 
+            // programaToolStripMenuItem
+            // 
+            resources.ApplyResources(this.programaToolStripMenuItem, "programaToolStripMenuItem");
+            this.programaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checkinToolStripMenuItem,
+            this.finalizadosToolStripMenuItem,
+            this.sairToolStripMenuItem});
+            this.programaToolStripMenuItem.Name = "programaToolStripMenuItem";
+            // 
+            // checkinToolStripMenuItem
+            // 
+            resources.ApplyResources(this.checkinToolStripMenuItem, "checkinToolStripMenuItem");
+            this.checkinToolStripMenuItem.Name = "checkinToolStripMenuItem";
+            this.checkinToolStripMenuItem.Click += new System.EventHandler(this.checkinToolStripMenuItem_Click);
+            // 
+            // finalizadosToolStripMenuItem
+            // 
+            resources.ApplyResources(this.finalizadosToolStripMenuItem, "finalizadosToolStripMenuItem");
+            this.finalizadosToolStripMenuItem.Name = "finalizadosToolStripMenuItem";
+            this.finalizadosToolStripMenuItem.Click += new System.EventHandler(this.finalizadosToolStripMenuItem_Click);
+            // 
+            // sairToolStripMenuItem
+            // 
+            resources.ApplyResources(this.sairToolStripMenuItem, "sairToolStripMenuItem");
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // cadastroToolStripMenuItem
             // 
@@ -96,6 +124,7 @@
             this.columnHeader3,
             this.columnHeader8,
             this.columnHeader7,
+            this.columnHeader9,
             this.columnHeader1,
             this.columnHeader6,
             this.columnHeader4});
@@ -145,33 +174,6 @@
             this.btFinalizar.UseVisualStyleBackColor = false;
             this.btFinalizar.Click += new System.EventHandler(this.btFinalizar_Click);
             // 
-            // programaToolStripMenuItem
-            // 
-            resources.ApplyResources(this.programaToolStripMenuItem, "programaToolStripMenuItem");
-            this.programaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.checkinToolStripMenuItem,
-            this.finalizadosToolStripMenuItem,
-            this.sairToolStripMenuItem});
-            this.programaToolStripMenuItem.Name = "programaToolStripMenuItem";
-            // 
-            // finalizadosToolStripMenuItem
-            // 
-            resources.ApplyResources(this.finalizadosToolStripMenuItem, "finalizadosToolStripMenuItem");
-            this.finalizadosToolStripMenuItem.Name = "finalizadosToolStripMenuItem";
-            this.finalizadosToolStripMenuItem.Click += new System.EventHandler(this.finalizadosToolStripMenuItem_Click);
-            // 
-            // checkinToolStripMenuItem
-            // 
-            resources.ApplyResources(this.checkinToolStripMenuItem, "checkinToolStripMenuItem");
-            this.checkinToolStripMenuItem.Name = "checkinToolStripMenuItem";
-            this.checkinToolStripMenuItem.Click += new System.EventHandler(this.checkinToolStripMenuItem_Click);
-            // 
-            // sairToolStripMenuItem
-            // 
-            resources.ApplyResources(this.sairToolStripMenuItem, "sairToolStripMenuItem");
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
-            // 
             // btCheckin
             // 
             resources.ApplyResources(this.btCheckin, "btCheckin");
@@ -179,6 +181,10 @@
             this.btCheckin.Name = "btCheckin";
             this.btCheckin.UseVisualStyleBackColor = false;
             this.btCheckin.Click += new System.EventHandler(this.btCheckin_Click);
+            // 
+            // columnHeader9
+            // 
+            resources.ApplyResources(this.columnHeader9, "columnHeader9");
             // 
             // telaPrincipal
             // 
@@ -226,5 +232,6 @@
         private System.Windows.Forms.ToolStripMenuItem checkinToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.Button btCheckin;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
     }
 }
