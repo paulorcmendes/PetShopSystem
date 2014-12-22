@@ -44,17 +44,22 @@ namespace PetPamonha
 
         private void btnAgendar_Click(object sender, EventArgs e)
         {
-            PetTratamento tratamento = new PetTratamento();
+            if(this.dtpData.Text==""){
+                MessageBox.Show("Preencha os dados","Erro");
+            }
+            else{
+                PetTratamento tratamento = new PetTratamento();
 
-            tratamento.IdPet=(int)this.cmbNome.SelectedValue;
-            tratamento.IdTratamento = (int)this.cmbTratamento.SelectedValue;
-            tratamento.DataHora = this.dtpData.Value.ToString();
-            tratamento.Estado = true;
+                tratamento.IdPet = (int)this.cmbNome.SelectedValue;
+                tratamento.IdTratamento = (int)this.cmbTratamento.SelectedValue;
+                tratamento.DataHora = this.dtpData.Value.ToString();
+                tratamento.Estado = true;
 
-            DAOPetTratamento petTratamento = new DAOPetTratamento();
+                DAOPetTratamento petTratamento = new DAOPetTratamento();
 
-            petTratamento.inserePetTratamento(tratamento);
-            this.Close();
+                petTratamento.inserePetTratamento(tratamento);
+                this.Close();
+            }
         }
 
         private void cmbNome_SelectedIndexChanged(object sender, EventArgs e)

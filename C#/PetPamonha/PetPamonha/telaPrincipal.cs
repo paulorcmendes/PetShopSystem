@@ -50,6 +50,7 @@ namespace PetPamonha
 
         private void atualizarListV()
         {
+            this.listView1.Items.Clear();
             List<PetTratamento> listaDeTratamentos = new List<PetTratamento>();
             DAOPetTratamento petTratamento = new DAOPetTratamento();
             listaDeTratamentos = petTratamento.getListTratamentos();

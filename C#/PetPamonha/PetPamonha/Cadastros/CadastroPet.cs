@@ -19,13 +19,15 @@ namespace PetPamonha
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            String nome;
+            if(txtNome.Text==""||mkdDatadeNascimento.Text==""||txtRaca.Text==""||mktRGA.Text==""){
+                MessageBox.Show("Preencha os dados","Erro");
+            }
+            else{
+                String nome;
             String dataDeNascimento;
             String raca;
             String rga;
             int dono;
-
-
 
             nome = txtNome.Text;
             dataDeNascimento = mkdDatadeNascimento.Text;
@@ -50,6 +52,7 @@ namespace PetPamonha
             txtRaca.Text = "";
             mktRGA.Clear();
             this.Close();
+            }
         }
 
 

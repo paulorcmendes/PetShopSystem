@@ -18,7 +18,11 @@ namespace PetPamonha
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            String nome;
+            if(txtNome.Text==""||txtEmail.Text==""||mktCPF.Text==""||mktTelefone.Text==""){
+                MessageBox.Show("Preencha os dados","Erro");
+            }
+            else{
+                 String nome;
             String cpf;
             String email;
             String telefone;
@@ -45,6 +49,7 @@ namespace PetPamonha
             txtEmail.Text="";
             mktTelefone.Clear();
             this.Close();
+            }
         }
     }
 }
