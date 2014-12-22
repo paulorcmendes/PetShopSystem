@@ -71,5 +71,39 @@ namespace PetPamonha
             }
             return clientes;
         }
+
+        public Cliente localizar(int id)
+        {
+            MySqlDataReader leitor;
+            Cliente c = null;
+            
+            try
+            {
+                this.con.Open();
+                c = new Cliente();
+                MySqlCommand cmd = con.CreateCommand();
+                cmd.CommandText = "select * from cliente where idCliente = " + id;
+                leitor = cmd.ExecuteReader();
+
+                while (leitor.Read())
+                {
+                    c.IdCliente = id;
+                    c.Nome = (String)leitor["Nome"];
+                    c.CPF = (String)leitor["CPF"];
+                    c.Telefone= (String)leitor["Telefone"];
+                    c.Email = (String)leitor["Email"];
+                }
+                leitor.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                this.con.Close();
+            }
+            return c;
+        }
     }
 }

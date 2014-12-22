@@ -39,7 +39,9 @@ namespace PetPamonha.Cadastros
 
             daoTratamento.insereTratamento(tratamento);
 
-
+            txtNome.Text="";
+            mktPreco.Clear();
+            mktDuracaoMedia.Clear();
         }
     }
 }

@@ -48,7 +48,7 @@ namespace PetPamonha
         {
         }
 
-       public List<Pet> getListPets()
+        public List<Pet> getListPets()
         {
             MySqlDataReader leitor;
             List<Pet> pets = null;
@@ -83,5 +83,75 @@ namespace PetPamonha
             }
             return pets;
         }
+
+        public Pet localizar(int id){
+            MySqlDataReader leitor;
+            Pet pet = null;
+            try
+            {
+                this.con.Open();
+                pet= new Pet();
+                MySqlCommand cmd = con.CreateCommand();
+                cmd.CommandText = "select * from pet where idPet = '"+id+"'";
+                leitor = cmd.ExecuteReader();
+
+                while (leitor.Read())
+                {
+                    pet.IdPet = Convert.ToInt32(id);
+                    pet.Nome = (String)leitor["nome"];
+                    pet.DataDeNascimento = Convert.ToString(leitor["dataDeNascimento"]);
+                    pet.DataDeNascimento = formatar.removerHora(pet.DataDeNascimento);
+                    pet.Raca = (String)leitor["raca"];
+                    pet.RGA = (String)leitor["rga"];
+                    pet.Dono= Convert.ToInt32(leitor["idCliente"]);
+                }
+                leitor.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                this.con.Close();
+            }
+            return pet;
+        }
+
+        public Pet localizar(String RGA)
+        {
+            MySqlDataReader leitor;
+            Pet pet = null;
+            try
+            {
+                this.con.Open();
+                pet = new Pet();
+                MySqlCommand cmd = con.CreateCommand();
+                cmd.CommandText = "select * from pet where RGA = '" + RGA + "'";
+                leitor = cmd.ExecuteReader();
+
+                while (leitor.Read())
+                {
+                    pet.IdPet = Convert.ToInt32(leitor["idPet"]);
+                    pet.Nome = (String)leitor["nome"];
+                    pet.DataDeNascimento = Convert.ToString(leitor["dataDeNascimento"]);
+                    pet.DataDeNascimento = formatar.removerHora(pet.DataDeNascimento);
+                    pet.Raca = (String)leitor["raca"];
+                    pet.RGA = (String)leitor["rga"];
+                    pet.Dono = Convert.ToInt32(leitor["idCliente"]);
+                }
+                leitor.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                this.con.Close();
+            }
+            return pet;
+        }
+
     }
 }

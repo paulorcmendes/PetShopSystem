@@ -15,7 +15,6 @@ C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\bin\Release\PetPamonha.
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.Agendamento.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.CadastroPet.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.Cadastros.CadastroTratamento.resources
-C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.Checkin.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.CadastroCliente.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.ListadePets.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Release\PetPamonha.Properties.Resources.resources

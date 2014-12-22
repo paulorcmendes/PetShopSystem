@@ -43,27 +43,26 @@ namespace PetPamonha.DAO
         }
 
 
-        public List<Cliente> getListTratamentos()
+        public List<PetTratamento> getListTratamentos()
         {
             MySqlDataReader leitor;
-            List<Cliente> clientes = null;
+            List<PetTratamento> tratamentos = null;
             try
             {
                 this.con.Open();
-                clientes = new List<Cliente>();
+                tratamentos = new List<PetTratamento>();
                 MySqlCommand cmd = con.CreateCommand();
-                cmd.CommandText = "select * from cliente";
+                cmd.CommandText = "select * from petTratamento";
                 leitor = cmd.ExecuteReader();
 
                 while (leitor.Read())
                 {
-                    Cliente c = new Cliente();
-                    c.IdCliente = (int)leitor["idCliente"];
-                    c.Nome = (String)leitor["Nome"];
-                    c.CPF = (String)leitor["CPF"];
-                    c.Email = (String)leitor["Email"];
-                    c.Telefone = (String)leitor["Telefone"];
-                    clientes.Add(c);
+                    PetTratamento p = new PetTratamento();
+                    p.IdPet = (int)leitor["idPet"];
+                    p.IdTratamento= (int)leitor["idTratamento"];
+                    p.DataHora = Convert.ToString(leitor["dataHora"]);
+                    p.Estado= Convert.ToBoolean(leitor["estado"]);
+                    tratamentos.Add(p);
                 }
                 leitor.Close();
             }
@@ -75,7 +74,27 @@ namespace PetPamonha.DAO
             {
                 this.con.Close();
             }
-            return clientes;
+            return tratamentos;
+        }
+
+        public void remover(int idPet)
+        {
+            try
+            {
+                this.con.Open();
+                MySqlCommand cmd = con.CreateCommand();
+                cmd.CommandText = "update petTratamento set estado = 0 where idPet = "+idPet;
+                cmd.ExecuteNonQuery();
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                this.con.Close();
+            }
         }
     }
 }

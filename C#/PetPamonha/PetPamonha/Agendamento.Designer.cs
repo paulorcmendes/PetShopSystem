@@ -47,7 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 50);
+            this.label1.Location = new System.Drawing.Point(13, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 0;
@@ -57,7 +57,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 18);
+            this.label3.Location = new System.Drawing.Point(13, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 6;
@@ -74,19 +74,19 @@
             // 
             // dtpData
             // 
-            this.dtpData.Location = new System.Drawing.Point(52, 107);
+            this.dtpData.Location = new System.Drawing.Point(136, 104);
             this.dtpData.Name = "dtpData";
             this.dtpData.Size = new System.Drawing.Size(237, 20);
             this.dtpData.TabIndex = 9;
             // 
             // btnAgendar
             // 
-            this.btnAgendar.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnAgendar.Location = new System.Drawing.Point(242, 238);
+            this.btnAgendar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgendar.Location = new System.Drawing.Point(146, 191);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(112, 44);
             this.btnAgendar.TabIndex = 10;
-            this.btnAgendar.Text = "Agendar";
+            this.btnAgendar.Text = "Checkin";
             this.btnAgendar.UseVisualStyleBackColor = false;
             this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
             // 
@@ -94,7 +94,7 @@
             // 
             this.cmbNome.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNome.FormattingEnabled = true;
-            this.cmbNome.Location = new System.Drawing.Point(83, 15);
+            this.cmbNome.Location = new System.Drawing.Point(136, 15);
             this.cmbNome.Name = "cmbNome";
             this.cmbNome.Size = new System.Drawing.Size(240, 21);
             this.cmbNome.TabIndex = 14;
@@ -128,7 +128,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 179);
+            this.label5.Location = new System.Drawing.Point(13, 150);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 18;
@@ -137,14 +137,14 @@
             // cmbTratamento
             // 
             this.cmbTratamento.FormattingEnabled = true;
-            this.cmbTratamento.Location = new System.Drawing.Point(83, 179);
+            this.cmbTratamento.Location = new System.Drawing.Point(136, 142);
             this.cmbTratamento.Name = "cmbTratamento";
             this.cmbTratamento.Size = new System.Drawing.Size(240, 21);
             this.cmbTratamento.TabIndex = 19;
             // 
             // txtRaca
             // 
-            this.txtRaca.Location = new System.Drawing.Point(83, 50);
+            this.txtRaca.Location = new System.Drawing.Point(136, 47);
             this.txtRaca.Name = "txtRaca";
             this.txtRaca.ReadOnly = true;
             this.txtRaca.Size = new System.Drawing.Size(100, 20);
@@ -152,7 +152,7 @@
             // 
             // txtRGA
             // 
-            this.txtRGA.Location = new System.Drawing.Point(126, 76);
+            this.txtRGA.Location = new System.Drawing.Point(136, 73);
             this.txtRGA.Name = "txtRGA";
             this.txtRGA.ReadOnly = true;
             this.txtRGA.Size = new System.Drawing.Size(100, 20);
@@ -162,8 +162,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(582, 294);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(409, 247);
             this.Controls.Add(this.txtRGA);
             this.Controls.Add(this.txtRaca);
             this.Controls.Add(this.cmbTratamento);
@@ -177,12 +177,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Agendamento";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Agendamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Checkin";
             this.Load += new System.EventHandler(this.Agendamento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

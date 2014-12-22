@@ -71,12 +71,6 @@
     <Compile Include="DAO\Conexao.cs" />
     <Compile Include="DAO\DAOPetTratamento.cs" />
     <Compile Include="DAO\DAOTratamento.cs" />
-    <Compile Include="Checkin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Checkin.Designer.cs">
-      <DependentUpon>Checkin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Cadastros\CadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,9 +104,6 @@
     <EmbeddedResource Include="Cadastros\CadastroTratamento.resx">
       <DependentUpon>CadastroTratamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Checkin.resx">
-      <DependentUpon>Checkin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,10 +119,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="telaPrincipal.pt-BR.resx">
+      <DependentUpon>telaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telaPrincipal.resx">
       <DependentUpon>telaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Properties\DataSources\Pet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -141,6 +134,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

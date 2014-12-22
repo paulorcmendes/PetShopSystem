@@ -28,160 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.lblPetsTratamento = new System.Windows.Forms.Label();
-            this.listAnimaisTratamento = new System.Windows.Forms.ListView();
-            this.colRGA = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colNomePet = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colTratamento = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colDono = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lblPetsTratados = new System.Windows.Forms.Label();
-            this.txtRGAterminados = new System.Windows.Forms.TextBox();
-            this.btnTratado = new System.Windows.Forms.Button();
-            this.lblAnimaisTratados = new System.Windows.Forms.Label();
-            this.listAnimaisTratados = new System.Windows.Forms.ListView();
-            this.colRGAtratados = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colNomeTratados = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colDonoTratados = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lblPetsTratamento
             // 
             this.lblPetsTratamento.AutoSize = true;
             this.lblPetsTratamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPetsTratamento.Location = new System.Drawing.Point(78, 9);
+            this.lblPetsTratamento.Location = new System.Drawing.Point(299, 9);
             this.lblPetsTratamento.Name = "lblPetsTratamento";
-            this.lblPetsTratamento.Size = new System.Drawing.Size(211, 17);
+            this.lblPetsTratamento.Size = new System.Drawing.Size(172, 17);
             this.lblPetsTratamento.TabIndex = 0;
-            this.lblPetsTratamento.Text = "Lista de Animais em Tratamento";
+            this.lblPetsTratamento.Text = "Lista de Animais Tratados";
             // 
-            // listAnimaisTratamento
+            // listView2
             // 
-            this.listAnimaisTratamento.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colRGA,
-            this.colNomePet,
-            this.colTratamento,
-            this.colDono});
-            this.listAnimaisTratamento.GridLines = true;
-            listViewGroup1.Header = "ListViewGroup";
-            listViewGroup1.Name = "listViewGroup1";
-            this.listAnimaisTratamento.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1});
-            this.listAnimaisTratamento.Location = new System.Drawing.Point(2, 29);
-            this.listAnimaisTratamento.Name = "listAnimaisTratamento";
-            this.listAnimaisTratamento.Size = new System.Drawing.Size(393, 302);
-            this.listAnimaisTratamento.TabIndex = 1;
-            this.listAnimaisTratamento.UseCompatibleStateImageBehavior = false;
-            this.listAnimaisTratamento.View = System.Windows.Forms.View.Details;
-            this.listAnimaisTratamento.SelectedIndexChanged += new System.EventHandler(this.listAnimaisTratamento_SelectedIndexChanged);
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader2,
+            this.columnHeader5,
+            this.columnHeader3,
+            this.columnHeader8,
+            this.columnHeader7,
+            this.columnHeader1,
+            this.columnHeader6,
+            this.columnHeader4});
+            this.listView2.FullRowSelect = true;
+            this.listView2.Location = new System.Drawing.Point(12, 47);
+            this.listView2.MultiSelect = false;
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(767, 301);
+            this.listView2.TabIndex = 2;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
             // 
-            // colRGA
+            // columnHeader2
             // 
-            this.colRGA.Text = "RGA";
+            this.columnHeader2.Text = "Nome do Pet";
+            this.columnHeader2.Width = 150;
             // 
-            // colNomePet
+            // columnHeader5
             // 
-            this.colNomePet.Text = "Nome";
-            this.colNomePet.Width = 84;
+            this.columnHeader5.Text = "RGA";
             // 
-            // colTratamento
+            // columnHeader3
             // 
-            this.colTratamento.Text = "Tipo de Tratamento";
-            this.colTratamento.Width = 114;
+            this.columnHeader3.Text = "Dono";
+            this.columnHeader3.Width = 150;
             // 
-            // colDono
+            // columnHeader8
             // 
-            this.colDono.Text = "Dono do Pet";
-            this.colDono.Width = 131;
+            this.columnHeader8.Text = "Telefone";
+            this.columnHeader8.Width = 100;
             // 
-            // lblPetsTratados
+            // columnHeader7
             // 
-            this.lblPetsTratados.AutoSize = true;
-            this.lblPetsTratados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPetsTratados.Location = new System.Drawing.Point(401, 43);
-            this.lblPetsTratados.Name = "lblPetsTratados";
-            this.lblPetsTratados.Size = new System.Drawing.Size(118, 17);
-            this.lblPetsTratados.TabIndex = 2;
-            this.lblPetsTratados.Text = "Animais Tratados";
+            this.columnHeader7.Text = "Tratamento";
+            this.columnHeader7.Width = 100;
             // 
-            // txtRGAterminados
+            // columnHeader1
             // 
-            this.txtRGAterminados.Location = new System.Drawing.Point(404, 63);
-            this.txtRGAterminados.Name = "txtRGAterminados";
-            this.txtRGAterminados.Size = new System.Drawing.Size(115, 20);
-            this.txtRGAterminados.TabIndex = 3;
-            this.txtRGAterminados.Tag = "Coloque o RGA do Pet onde o tratamento acabou de ser concluído";
+            this.columnHeader1.Text = "Entrada";
+            this.columnHeader1.Width = 120;
             // 
-            // btnTratado
+            // columnHeader6
             // 
-            this.btnTratado.Location = new System.Drawing.Point(417, 98);
-            this.btnTratado.Name = "btnTratado";
-            this.btnTratado.Size = new System.Drawing.Size(88, 52);
-            this.btnTratado.TabIndex = 4;
-            this.btnTratado.Text = "Finalizar Tratamento";
-            this.btnTratado.UseVisualStyleBackColor = true;
-            this.btnTratado.Click += new System.EventHandler(this.button1_Click);
+            this.columnHeader6.Text = "Termino";
+            this.columnHeader6.Width = 120;
             // 
-            // lblAnimaisTratados
+            // columnHeader4
             // 
-            this.lblAnimaisTratados.AutoSize = true;
-            this.lblAnimaisTratados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnimaisTratados.Location = new System.Drawing.Point(610, 9);
-            this.lblAnimaisTratados.Name = "lblAnimaisTratados";
-            this.lblAnimaisTratados.Size = new System.Drawing.Size(172, 17);
-            this.lblAnimaisTratados.TabIndex = 5;
-            this.lblAnimaisTratados.Text = "Lista de Animais Tratados";
-            // 
-            // listAnimaisTratados
-            // 
-            this.listAnimaisTratados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colRGAtratados,
-            this.colNomeTratados,
-            this.colDonoTratados});
-            this.listAnimaisTratados.GridLines = true;
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.Name = "listViewGroup1";
-            this.listAnimaisTratados.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup2});
-            this.listAnimaisTratados.Location = new System.Drawing.Point(525, 29);
-            this.listAnimaisTratados.Name = "listAnimaisTratados";
-            this.listAnimaisTratados.Size = new System.Drawing.Size(323, 302);
-            this.listAnimaisTratados.TabIndex = 6;
-            this.listAnimaisTratados.UseCompatibleStateImageBehavior = false;
-            this.listAnimaisTratados.View = System.Windows.Forms.View.Details;
-            // 
-            // colRGAtratados
-            // 
-            this.colRGAtratados.Text = "RGA";
-            // 
-            // colNomeTratados
-            // 
-            this.colNomeTratados.Text = "Nome";
-            this.colNomeTratados.Width = 106;
-            // 
-            // colDonoTratados
-            // 
-            this.colDonoTratados.Text = "Dono";
-            this.colDonoTratados.Width = 153;
+            this.columnHeader4.Text = "Estado";
+            this.columnHeader4.Width = 90;
             // 
             // ListadePets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(870, 343);
-            this.Controls.Add(this.listAnimaisTratados);
-            this.Controls.Add(this.lblAnimaisTratados);
-            this.Controls.Add(this.btnTratado);
-            this.Controls.Add(this.txtRGAterminados);
-            this.Controls.Add(this.lblPetsTratados);
-            this.Controls.Add(this.listAnimaisTratamento);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(791, 360);
+            this.Controls.Add(this.listView2);
             this.Controls.Add(this.lblPetsTratamento);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ListadePets";
-            this.Text = "Lista de Pets na Loja";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Lista de Pets";
             this.Load += new System.EventHandler(this.ListadePets_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -191,18 +132,14 @@
         #endregion
 
         private System.Windows.Forms.Label lblPetsTratamento;
-        private System.Windows.Forms.ListView listAnimaisTratamento;
-        private System.Windows.Forms.ColumnHeader colRGA;
-        private System.Windows.Forms.ColumnHeader colNomePet;
-        private System.Windows.Forms.ColumnHeader colTratamento;
-        private System.Windows.Forms.ColumnHeader colDono;
-        private System.Windows.Forms.Label lblPetsTratados;
-        private System.Windows.Forms.TextBox txtRGAterminados;
-        private System.Windows.Forms.Button btnTratado;
-        private System.Windows.Forms.Label lblAnimaisTratados;
-        private System.Windows.Forms.ListView listAnimaisTratados;
-        private System.Windows.Forms.ColumnHeader colRGAtratados;
-        private System.Windows.Forms.ColumnHeader colNomeTratados;
-        private System.Windows.Forms.ColumnHeader colDonoTratados;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

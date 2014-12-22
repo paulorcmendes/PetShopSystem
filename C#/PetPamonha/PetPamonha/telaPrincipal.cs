@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using PetPamonha.Cadastros;
+using PetPamonha.DAO;
+using PetPamonha.Classes_com_Properties;
 
 namespace PetPamonha
 {
@@ -41,18 +43,78 @@ namespace PetPamonha
             listadePets.Show();
         }
 
-        private void btnCheckin_Click(object sender, EventArgs e)
+        private void telaPrincipal_Load(object sender, EventArgs e)
         {
-            Checkin checkin = new Checkin();
-            checkin.Show();
+            List<PetTratamento> listaDeTratamentos = new List<PetTratamento>();
+            DAOPetTratamento petTratamento = new DAOPetTratamento();
+            listaDeTratamentos = petTratamento.getListTratamentos();
+            Formatador f = new Formatador();
+
+            for (int i = 0; i < listaDeTratamentos.Count; i++)
+            {
+                ListViewItem item = new ListViewItem();
+                Pet pet = new Pet();
+                Tratamento tratamento = new Tratamento();
+                Cliente cliente = new Cliente();
+                pet = new DAOPet().localizar(listaDeTratamentos[i].IdPet);
+                tratamento = new DAOTratamento().localizar(listaDeTratamentos[i].IdTratamento);
+                cliente = new DAOCliente().localizar(pet.Dono);
+
+                String data = listaDeTratamentos[i].DataHora;
+                Boolean estado = listaDeTratamentos[i].Estado;
+
+                if(estado == true){
+                    item.Text = pet.Nome;
+                    item.SubItems.Add(pet.RGA);
+                    item.SubItems.Add(cliente.Nome);
+                    item.SubItems.Add(cliente.Telefone);
+                    item.SubItems.Add(tratamento.Nome);
+                    item.SubItems.Add(listaDeTratamentos[i].DataHora);
+                    item.SubItems.Add(f.calcularTermino(listaDeTratamentos[i].DataHora,tratamento.DuracaoMedia));
+                    item.SubItems.Add("Em Andamento");
+                    
+                    this.listView1.Items.Add(item);
+                }
+
+            }
         }
 
-        private void btnAgendamento_Click(object sender, EventArgs e)
+        private void btFinalizar_Click(object sender, EventArgs e)
+        {
+            if(this.listView1.Items.Count>0){
+                String rga = this.listView1.SelectedItems[0].SubItems[1].Text;
+                DAOPet daoPet = new DAOPet();
+                DAOPetTratamento petTratamento = new DAOPetTratamento();
+                petTratamento.remover(daoPet.localizar(rga).IdPet);
+                this.listView1.SelectedItems[0].Remove();
+            }
+            else{
+
+            }
+        }
+
+        private void finalizadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadePets listadePets = new ListadePets();
+            listadePets.Show();
+        }
+
+        private void btCheckin_Click(object sender, EventArgs e)
         {
             Agendamento agendamento = new Agendamento();
             agendamento.Show();
         }
 
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void checkinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Agendamento agendamento = new Agendamento();
+            agendamento.Show();
+        }
 
     }
 }

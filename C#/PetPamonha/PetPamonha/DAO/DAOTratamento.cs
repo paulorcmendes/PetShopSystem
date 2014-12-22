@@ -72,5 +72,38 @@ namespace PetPamonha
             }
             return tratamentos;
         }
+
+        public Tratamento localizar(int id)
+        {
+            MySqlDataReader leitor;
+            Tratamento tratamento = null;
+            try
+            {
+                this.con.Open();
+                tratamento = new Tratamento();
+                MySqlCommand cmd = con.CreateCommand();
+                cmd.CommandText = "select * from tratamento where idTratamento = " + id;
+                leitor = cmd.ExecuteReader();
+
+                while (leitor.Read())
+                {
+                    tratamento.IdTratamento = id;
+                    tratamento.Nome = (String)leitor["nome"];
+                    tratamento.Preco = Convert.ToString(leitor["valor"]);
+                    tratamento.DuracaoMedia = Convert.ToString(leitor["duracaoMedia"]);
+                }
+                leitor.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                this.con.Close();
+            }
+            return tratamento;
+        }
+
     }
 }

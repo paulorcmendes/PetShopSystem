@@ -59,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 50);
+            this.label2.Location = new System.Drawing.Point(13, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // mktCPF
             // 
-            this.mktCPF.Location = new System.Drawing.Point(64, 47);
+            this.mktCPF.Location = new System.Drawing.Point(64, 38);
             this.mktCPF.Mask = "000.000.000-00";
             this.mktCPF.Name = "mktCPF";
             this.mktCPF.Size = new System.Drawing.Size(89, 20);
@@ -76,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 83);
+            this.label3.Location = new System.Drawing.Point(13, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 4;
@@ -84,15 +84,15 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(64, 80);
+            this.txtEmail.Location = new System.Drawing.Point(64, 67);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(224, 20);
             this.txtEmail.TabIndex = 5;
             // 
             // btnEnviar
             // 
-            this.btnEnviar.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnEnviar.Location = new System.Drawing.Point(95, 152);
+            this.btnEnviar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEnviar.Location = new System.Drawing.Point(96, 140);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(108, 44);
             this.btnEnviar.TabIndex = 6;
@@ -103,7 +103,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 114);
+            this.label4.Location = new System.Drawing.Point(12, 102);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 7;
@@ -111,7 +111,7 @@
             // 
             // mktTelefone
             // 
-            this.mktTelefone.Location = new System.Drawing.Point(74, 111);
+            this.mktTelefone.Location = new System.Drawing.Point(64, 99);
             this.mktTelefone.Mask = "(00)00000-0000";
             this.mktTelefone.Name = "mktTelefone";
             this.mktTelefone.Size = new System.Drawing.Size(89, 20);
@@ -121,8 +121,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(305, 221);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(305, 196);
             this.Controls.Add(this.mktTelefone);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnEnviar);
@@ -132,10 +132,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CadastroCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Clientes";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -42,9 +42,11 @@ C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonh
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Agendamento.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.CadastroPet.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Cadastros.CadastroTratamento.resources
-C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Checkin.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.CadastroCliente.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.ListadePets.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.Properties.Resources.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.telaPrincipal.resources
 C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.csproj.GenerateResource.Cache
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\bin\Debug\pt-BR\PetPamonha.resources.dll
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\PetPamonha.telaPrincipal.pt-BR.resources
+C:\Users\User\workspace\Pamonha\C#\PetPamonha\PetPamonha\obj\x86\Debug\pt-BR\PetPamonha.resources.dll

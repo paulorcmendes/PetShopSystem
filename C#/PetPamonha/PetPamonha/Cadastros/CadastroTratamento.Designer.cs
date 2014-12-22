@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 40);
+            this.label2.Location = new System.Drawing.Point(12, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 1;
@@ -66,14 +66,14 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(59, 6);
+            this.txtNome.Location = new System.Drawing.Point(103, 12);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(213, 20);
+            this.txtNome.Size = new System.Drawing.Size(211, 20);
             this.txtNome.TabIndex = 3;
             // 
             // mktPreco
             // 
-            this.mktPreco.Location = new System.Drawing.Point(59, 37);
+            this.mktPreco.Location = new System.Drawing.Point(103, 41);
             this.mktPreco.Mask = "0000.00";
             this.mktPreco.Name = "mktPreco";
             this.mktPreco.Size = new System.Drawing.Size(50, 20);
@@ -89,20 +89,21 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(59, 106);
+            this.btnCadastrar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCadastrar.Location = new System.Drawing.Point(84, 101);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(169, 49);
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // CadastroTratamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(284, 167);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(326, 162);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.mktDuracaoMedia);
             this.Controls.Add(this.mktPreco);
@@ -113,6 +114,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CadastroTratamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Tratamentos";
             this.ResumeLayout(false);
             this.PerformLayout();

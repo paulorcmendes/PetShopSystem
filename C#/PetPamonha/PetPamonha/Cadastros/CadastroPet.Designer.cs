@@ -52,9 +52,9 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(60, 10);
+            this.txtNome.Location = new System.Drawing.Point(125, 10);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(212, 20);
+            this.txtNome.Size = new System.Drawing.Size(216, 20);
             this.txtNome.TabIndex = 1;
             // 
             // label2
@@ -85,7 +85,7 @@
             // 
             // txtRaca
             // 
-            this.txtRaca.Location = new System.Drawing.Point(60, 69);
+            this.txtRaca.Location = new System.Drawing.Point(125, 69);
             this.txtRaca.Name = "txtRaca";
             this.txtRaca.Size = new System.Drawing.Size(145, 20);
             this.txtRaca.TabIndex = 5;
@@ -103,16 +103,16 @@
             // 
             this.cmbDono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDono.FormattingEnabled = true;
-            this.cmbDono.Location = new System.Drawing.Point(60, 132);
+            this.cmbDono.Location = new System.Drawing.Point(125, 135);
             this.cmbDono.Name = "cmbDono";
-            this.cmbDono.Size = new System.Drawing.Size(212, 21);
+            this.cmbDono.Size = new System.Drawing.Size(216, 21);
             this.cmbDono.TabIndex = 7;
             this.cmbDono.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnEnviar
             // 
-            this.btnEnviar.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnEnviar.Location = new System.Drawing.Point(97, 176);
+            this.btnEnviar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEnviar.Location = new System.Drawing.Point(116, 176);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(108, 44);
             this.btnEnviar.TabIndex = 8;
@@ -131,7 +131,7 @@
             // 
             // mktRGA
             // 
-            this.mktRGA.Location = new System.Drawing.Point(60, 100);
+            this.mktRGA.Location = new System.Drawing.Point(125, 103);
             this.mktRGA.Mask = "000.000";
             this.mktRGA.Name = "mktRGA";
             this.mktRGA.Size = new System.Drawing.Size(59, 20);
@@ -142,8 +142,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(288, 232);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(353, 232);
             this.Controls.Add(this.mktRGA);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnEnviar);
@@ -158,6 +158,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CadastroPet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Pet";
             this.Load += new System.EventHandler(this.CadastroPet_Load);
             this.ResumeLayout(false);

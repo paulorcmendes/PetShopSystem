@@ -40,8 +40,10 @@ namespace PetPamonha
 
 
             Daocliente.insereCliente(cliente);
-
-            
+            mktCPF.Clear();
+            txtNome.Text = "";
+            txtEmail.Text="";
+            mktTelefone.Clear();
         }
     }
 }

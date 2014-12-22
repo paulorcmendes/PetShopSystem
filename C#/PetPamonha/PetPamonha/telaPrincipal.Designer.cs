@@ -28,100 +28,175 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaPrincipal));
             this.menuTelaPrincipal = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPet = new System.Windows.Forms.ToolStripMenuItem();
             this.menuTratamento = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuListaDePets = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnCheckin = new System.Windows.Forms.Button();
-            this.btnAgendamento = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btFinalizar = new System.Windows.Forms.Button();
+            this.programaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.finalizadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btCheckin = new System.Windows.Forms.Button();
             this.menuTelaPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuTelaPrincipal
             // 
+            resources.ApplyResources(this.menuTelaPrincipal, "menuTelaPrincipal");
             this.menuTelaPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem,
-            this.menuListaDePets});
-            this.menuTelaPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.programaToolStripMenuItem,
+            this.cadastroToolStripMenuItem});
             this.menuTelaPrincipal.Name = "menuTelaPrincipal";
-            this.menuTelaPrincipal.Size = new System.Drawing.Size(758, 24);
-            this.menuTelaPrincipal.TabIndex = 0;
-            this.menuTelaPrincipal.Text = "menuTelaPrincipal";
             // 
             // cadastroToolStripMenuItem
             // 
+            resources.ApplyResources(this.cadastroToolStripMenuItem, "cadastroToolStripMenuItem");
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuCliente,
             this.menuPet,
             this.menuTratamento});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.cadastroToolStripMenuItem.Text = "Cadastro";
             // 
             // menuCliente
             // 
+            resources.ApplyResources(this.menuCliente, "menuCliente");
             this.menuCliente.Name = "menuCliente";
-            this.menuCliente.Size = new System.Drawing.Size(152, 22);
-            this.menuCliente.Text = "Cliente";
             this.menuCliente.Click += new System.EventHandler(this.menuCliente_Click);
             // 
             // menuPet
             // 
+            resources.ApplyResources(this.menuPet, "menuPet");
             this.menuPet.Name = "menuPet";
-            this.menuPet.Size = new System.Drawing.Size(152, 22);
-            this.menuPet.Text = "Pet";
             this.menuPet.Click += new System.EventHandler(this.menuPet_Click);
             // 
             // menuTratamento
             // 
+            resources.ApplyResources(this.menuTratamento, "menuTratamento");
             this.menuTratamento.Name = "menuTratamento";
-            this.menuTratamento.Size = new System.Drawing.Size(152, 22);
-            this.menuTratamento.Text = "Tratamento";
             this.menuTratamento.Click += new System.EventHandler(this.menuTratamento_Click);
             // 
-            // menuListaDePets
+            // listView1
             // 
-            this.menuListaDePets.Name = "menuListaDePets";
-            this.menuListaDePets.Size = new System.Drawing.Size(84, 20);
-            this.menuListaDePets.Text = "Lista de Pets";
-            this.menuListaDePets.Click += new System.EventHandler(this.menuListaDePets_Click);
+            resources.ApplyResources(this.listView1, "listView1");
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader2,
+            this.columnHeader5,
+            this.columnHeader3,
+            this.columnHeader8,
+            this.columnHeader7,
+            this.columnHeader1,
+            this.columnHeader6,
+            this.columnHeader4});
+            this.listView1.FullRowSelect = true;
+            this.listView1.MultiSelect = false;
+            this.listView1.Name = "listView1";
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // btnCheckin
+            // columnHeader2
             // 
-            this.btnCheckin.Location = new System.Drawing.Point(73, 181);
-            this.btnCheckin.Name = "btnCheckin";
-            this.btnCheckin.Size = new System.Drawing.Size(167, 91);
-            this.btnCheckin.TabIndex = 1;
-            this.btnCheckin.Text = "Check In";
-            this.btnCheckin.UseVisualStyleBackColor = true;
-            this.btnCheckin.Click += new System.EventHandler(this.btnCheckin_Click);
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
             // 
-            // btnAgendamento
+            // columnHeader5
             // 
-            this.btnAgendamento.Location = new System.Drawing.Point(481, 181);
-            this.btnAgendamento.Name = "btnAgendamento";
-            this.btnAgendamento.Size = new System.Drawing.Size(167, 91);
-            this.btnAgendamento.TabIndex = 2;
-            this.btnAgendamento.Text = "Agendamento";
-            this.btnAgendamento.UseVisualStyleBackColor = true;
-            this.btnAgendamento.Click += new System.EventHandler(this.btnAgendamento_Click);
+            resources.ApplyResources(this.columnHeader5, "columnHeader5");
+            // 
+            // columnHeader3
+            // 
+            resources.ApplyResources(this.columnHeader3, "columnHeader3");
+            // 
+            // columnHeader8
+            // 
+            resources.ApplyResources(this.columnHeader8, "columnHeader8");
+            // 
+            // columnHeader7
+            // 
+            resources.ApplyResources(this.columnHeader7, "columnHeader7");
+            // 
+            // columnHeader1
+            // 
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
+            // 
+            // columnHeader6
+            // 
+            resources.ApplyResources(this.columnHeader6, "columnHeader6");
+            // 
+            // columnHeader4
+            // 
+            resources.ApplyResources(this.columnHeader4, "columnHeader4");
+            // 
+            // btFinalizar
+            // 
+            resources.ApplyResources(this.btFinalizar, "btFinalizar");
+            this.btFinalizar.BackColor = System.Drawing.Color.White;
+            this.btFinalizar.Name = "btFinalizar";
+            this.btFinalizar.UseVisualStyleBackColor = false;
+            this.btFinalizar.Click += new System.EventHandler(this.btFinalizar_Click);
+            // 
+            // programaToolStripMenuItem
+            // 
+            resources.ApplyResources(this.programaToolStripMenuItem, "programaToolStripMenuItem");
+            this.programaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checkinToolStripMenuItem,
+            this.finalizadosToolStripMenuItem,
+            this.sairToolStripMenuItem});
+            this.programaToolStripMenuItem.Name = "programaToolStripMenuItem";
+            // 
+            // finalizadosToolStripMenuItem
+            // 
+            resources.ApplyResources(this.finalizadosToolStripMenuItem, "finalizadosToolStripMenuItem");
+            this.finalizadosToolStripMenuItem.Name = "finalizadosToolStripMenuItem";
+            this.finalizadosToolStripMenuItem.Click += new System.EventHandler(this.finalizadosToolStripMenuItem_Click);
+            // 
+            // checkinToolStripMenuItem
+            // 
+            resources.ApplyResources(this.checkinToolStripMenuItem, "checkinToolStripMenuItem");
+            this.checkinToolStripMenuItem.Name = "checkinToolStripMenuItem";
+            this.checkinToolStripMenuItem.Click += new System.EventHandler(this.checkinToolStripMenuItem_Click);
+            // 
+            // sairToolStripMenuItem
+            // 
+            resources.ApplyResources(this.sairToolStripMenuItem, "sairToolStripMenuItem");
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // btCheckin
+            // 
+            resources.ApplyResources(this.btCheckin, "btCheckin");
+            this.btCheckin.BackColor = System.Drawing.Color.White;
+            this.btCheckin.Name = "btCheckin";
+            this.btCheckin.UseVisualStyleBackColor = false;
+            this.btCheckin.Click += new System.EventHandler(this.btCheckin_Click);
             // 
             // telaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btFinalizar;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(758, 294);
-            this.Controls.Add(this.btnAgendamento);
-            this.Controls.Add(this.btnCheckin);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Controls.Add(this.btCheckin);
+            this.Controls.Add(this.btFinalizar);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.menuTelaPrincipal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuTelaPrincipal;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "telaPrincipal";
-            this.Text = "telaPrincipal";
+            this.ShowIcon = false;
+            this.Load += new System.EventHandler(this.telaPrincipal_Load);
             this.menuTelaPrincipal.ResumeLayout(false);
             this.menuTelaPrincipal.PerformLayout();
             this.ResumeLayout(false);
@@ -135,9 +210,21 @@
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuCliente;
         private System.Windows.Forms.ToolStripMenuItem menuPet;
-        private System.Windows.Forms.ToolStripMenuItem menuListaDePets;
-        private System.Windows.Forms.Button btnCheckin;
-        private System.Windows.Forms.Button btnAgendamento;
         private System.Windows.Forms.ToolStripMenuItem menuTratamento;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Button btFinalizar;
+        private System.Windows.Forms.ToolStripMenuItem programaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem finalizadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem checkinToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.Button btCheckin;
     }
 }

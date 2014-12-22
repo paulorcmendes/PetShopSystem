@@ -45,6 +45,10 @@ namespace PetPamonha
             DAOPet daoPet = new DAOPet();
             daoPet.inserePet(pet);
 
+            txtNome.Text="";
+            mkdDatadeNascimento.Clear();
+            txtRaca.Text = "";
+            mktRGA.Clear();
         }
 
 
